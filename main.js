@@ -1,0 +1,1 @@
+jQuery("h5").fitText(1.7);
