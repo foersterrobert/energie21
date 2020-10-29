@@ -1,1 +1,1 @@
-jQuery("h5").fitText(1.7);
+jQuery(".intro-text").fitText(1.7);
