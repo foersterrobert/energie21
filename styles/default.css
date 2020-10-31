@@ -54,13 +54,15 @@ h6 {
 }
 
 .navigation {
+  background-color: #fff;
+  border-bottom: 1px solid #5C5B5B;
   height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .navigation__logo {
@@ -106,7 +108,9 @@ h6 {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-      grid-template-areas: 'tacho' 'text' 'image';
+      grid-template-areas: 'tacho'
+ 'text'
+ 'image';
 }
 
 .intro__tacho {
@@ -137,7 +141,7 @@ h6 {
   grid-area: image;
 }
 
-.details-windrad {
+.details__windrad {
   height: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,24 +153,24 @@ h6 {
   border-bottom: 1px solid #5C5B5B;
 }
 
-.details-windrad img {
+.details__windrad img {
   width: 40%;
   margin: 20px auto;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-.details-windrad h5 {
+.details__windrad h5 {
   margin: auto;
 }
 
-.bundesländer-img {
+.bundesländer__img {
   width: 80%;
   display: block;
   margin: 0 auto;
 }
 
-.footer-wrapper {
+.footer {
   padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,7 +185,8 @@ h6 {
     gap: 50px 20px;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 'tacho text' 'image image';
+        grid-template-areas: 'tacho text'
+ 'image image';
   }
   .intro__text {
     margin: auto;

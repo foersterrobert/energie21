@@ -1,1 +1,1 @@
-jQuery(".intro-text").fitText(1.7);
+jQuery(".intro__text").fitText(1.7);
