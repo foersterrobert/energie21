@@ -108,6 +108,24 @@ nav {
     grid-area: image;
 }
 
+.details-windrad {
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f3e8a7;
+    border-bottom: 1px solid #5C5B5B;
+
+    img {
+        width: 40%;
+        margin: 20px auto;
+        object-fit: contain;
+    }
+
+    h5 {
+        margin: auto;
+    }
+}
+
 .bundesländer-img {
     width: 80%;
     display: block;
