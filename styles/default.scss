@@ -35,47 +35,49 @@ h4 { font-size: 24px;}
 h5 { font-size: 20px;}
 h6 { font-size: 16px;}
 
-.header-wrapper {
+
+.navigation {
     height: 70px;
     display: flex;
     justify-content: space-between;
-}
 
-.logo {
-    display: block;
-    margin: auto 0 15px 2%;
-    color: black;
-}
+    &__logo {
+        display: block;
+        margin: auto 0 15px 2%;
+        color: black;
 
-.logo:hover {
-    color: var(--textColor);
-    border-bottom: 3px solid #158EFF;
-}
+        &:hover {
+            color: var(--textColor);
+            border-bottom: 3px solid #158EFF;
+        }
+    }
 
-nav {
-    margin: 0;
+    &__nav {
+        margin: 0;
+    }
+    
+    &__list {
+        display: flex;
+        height: 100%;
+    }
 
-    ul {
-    display: flex;
-    height: 100%;
+    &__element {
+        margin: auto 10px 20px 10px;
+        font-weight: 600;
+    }
 
-        li {
-    margin: auto 10px 20px 10px;
-    font-weight: 600;
+    &__link {
+        color: black;
+        font-size: 16px;
 
-            a h6 {
-    color: black;
-
-            &:hover {
-    color: var(--textColor);
-    border-bottom: 2px solid #158EFF;
-                }
-            }
+        &:hover {
+            color: var(--textColor);
+            border-bottom: 2px solid #158EFF;
         }
     }
 }
 
-.intro-container{
+.intro{
     gap: 30px;
     display: grid;
     grid-template-columns: 1fr;
@@ -84,28 +86,28 @@ nav {
         'text'
         'image'
         ;
-}
 
-.intro-tacho {
-    grid-area: tacho;
+    &__tacho {
+        grid-area: tacho;
+    
+        ul {
+        text-align: center;
+        }
 
-    ul {
-    text-align: center;
+        &__img {
+            display: block;
+            width: 80%; 
+            margin: 20px auto 0 auto;
+        }
+    } 
+    
+    &__text {
+        grid-area: text;
     }
-}
-
-.intro-tacho-img {
-    display: block;
-    width: 80%; 
-    margin: 20px auto 0 auto;
-}
-
-.intro-text {
-    grid-area: text;
-}
-
-.intro-image {
-    grid-area: image;
+    
+    &__image {
+        grid-area: image;
+    }
 }
 
 .details-windrad {
@@ -139,16 +141,16 @@ nav {
 }
 
 @media screen and (min-width: 700px){
-    .intro-container{
+    .intro{
         gap: 50px 20px;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             'tacho text'
             'image image'
             ;
-    }
 
-    .intro-text {
-        margin: auto;
+        &__text {
+            margin: auto;
+        }
     }
 }

@@ -53,7 +53,7 @@ h6 {
   font-size: 16px;
 }
 
-.header-wrapper {
+.navigation {
   height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,43 +63,44 @@ h6 {
           justify-content: space-between;
 }
 
-.logo {
+.navigation__logo {
   display: block;
   margin: auto 0 15px 2%;
   color: black;
 }
 
-.logo:hover {
+.navigation__logo:hover {
   color: var(--textColor);
   border-bottom: 3px solid #158EFF;
 }
 
-nav {
+.navigation__nav {
   margin: 0;
 }
 
-nav ul {
+.navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100%;
 }
 
-nav ul li {
+.navigation__element {
   margin: auto 10px 20px 10px;
   font-weight: 600;
 }
 
-nav ul li a h6 {
+.navigation__link {
   color: black;
+  font-size: 16px;
 }
 
-nav ul li a h6:hover {
+.navigation__link:hover {
   color: var(--textColor);
   border-bottom: 2px solid #158EFF;
 }
 
-.intro-container {
+.intro {
   gap: 30px;
   display: -ms-grid;
   display: grid;
@@ -108,29 +109,29 @@ nav ul li a h6:hover {
       grid-template-areas: 'tacho' 'text' 'image';
 }
 
-.intro-tacho {
+.intro__tacho {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: tacho;
 }
 
-.intro-tacho ul {
+.intro__tacho ul {
   text-align: center;
 }
 
-.intro-tacho-img {
+.intro__tacho__img {
   display: block;
   width: 80%;
   margin: 20px auto 0 auto;
 }
 
-.intro-text {
+.intro__text {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: text;
 }
 
-.intro-image {
+.intro__image {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: image;
@@ -176,13 +177,13 @@ nav ul li a h6:hover {
 }
 
 @media screen and (min-width: 700px) {
-  .intro-container {
+  .intro {
     gap: 50px 20px;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 'tacho text' 'image image';
   }
-  .intro-text {
+  .intro__text {
     margin: auto;
   }
 }
