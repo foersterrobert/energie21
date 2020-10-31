@@ -1,8 +1,4 @@
 @charset "UTF-8";
-:root {
-  --textColor: #5C5B5B;
-}
-
 html, body {
   padding: 0;
   margin: 0;
@@ -15,12 +11,12 @@ h1, h2, h3, h4, h5, h6, strong {
 
 p, li, span, label, input, textarea {
   margin: 0;
-  color: var(--textColor);
+  color: #5C5B5B;
 }
 
 a {
   text-decoration: none;
-  color: var(--textColor);
+  color: #5C5B5B;
 }
 
 ul {
@@ -54,15 +50,14 @@ h6 {
 }
 
 .navigation {
-  background-color: #fff;
-  border-bottom: 1px solid #5C5B5B;
   height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #5C5B5B;
 }
 
 .navigation__logo {
@@ -72,7 +67,7 @@ h6 {
 }
 
 .navigation__logo:hover {
-  color: var(--textColor);
+  color: #5C5B5B;
   border-bottom: 3px solid #158EFF;
 }
 
@@ -94,11 +89,10 @@ h6 {
 
 .navigation__link {
   color: black;
-  font-size: 16px;
 }
 
 .navigation__link:hover {
-  color: var(--textColor);
+  color: #5C5B5B;
   border-bottom: 2px solid #158EFF;
 }
 
@@ -108,9 +102,7 @@ h6 {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-      grid-template-areas: 'tacho'
- 'text'
- 'image';
+      grid-template-areas: 'tacho' 'text' 'image';
 }
 
 .intro__tacho {
@@ -139,6 +131,14 @@ h6 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: image;
+}
+
+.details__text {
+  border-bottom: 1px solid #5C5B5B;
+}
+
+.details__text h5 {
+  margin: 40px 5%;
 }
 
 .details__windrad {
@@ -185,8 +185,7 @@ h6 {
     gap: 50px 20px;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 'tacho text'
- 'image image';
+        grid-template-areas: 'tacho text' 'image image';
   }
   .intro__text {
     margin: auto;

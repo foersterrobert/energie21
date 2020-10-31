@@ -1,6 +1,6 @@
-:root {
-    --textColor: #5C5B5B;
-}
+$darkGrey: #5C5B5B;
+$lightBlue: #158EFF;
+
 
 html, body {
     padding: 0;
@@ -14,12 +14,12 @@ h1, h2, h3, h4, h5, h6, strong {
 
 p, li, span, label, input, textarea {
     margin: 0;
-    color: var(--textColor);
+    color: $darkGrey;
 }
 
 a {
     text-decoration: none;
-    color: var(--textColor);
+    color: $darkGrey;
 }
 
 ul {
@@ -40,6 +40,7 @@ h6 { font-size: 16px;}
     height: 70px;
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid $darkGrey;
 
     &__logo {
         display: block;
@@ -47,8 +48,8 @@ h6 { font-size: 16px;}
         color: black;
 
         &:hover {
-            color: var(--textColor);
-            border-bottom: 3px solid #158EFF;
+            color: $darkGrey;
+            border-bottom: 3px solid $lightBlue;
         }
     }
 
@@ -68,11 +69,10 @@ h6 { font-size: 16px;}
 
     &__link {
         color: black;
-        font-size: 16px;
 
         &:hover {
-            color: var(--textColor);
-            border-bottom: 2px solid #158EFF;
+            color: $darkGrey;
+            border-bottom: 2px solid $lightBlue;
         }
     }
 }
@@ -111,12 +111,20 @@ h6 { font-size: 16px;}
 }
 
 .details {
+    &__text {
+        border-bottom: 1px solid $darkGrey;
+
+        h5 {
+            margin: 40px 5%;
+        }
+    }
+
     &__windrad {
         height: 350px;
         display: flex;
         justify-content: space-evenly;
         background-color: #f3e8a7;
-        border-bottom: 1px solid #5C5B5B;
+        border-bottom: 1px solid $darkGrey;
     
         img {
             width: 40%;
