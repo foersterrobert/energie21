@@ -1,0 +1,166 @@
+@charset "UTF-8";
+:root {
+  --textColor: #5C5B5B;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: "Statis Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  margin: 0;
+}
+
+p, li, span, label, input, textarea {
+  margin: 0;
+  color: var(--textColor);
+}
+
+a {
+  text-decoration: none;
+  color: var(--textColor);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+.header-wrapper {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  display: block;
+  margin: auto 0 15px 2%;
+  color: black;
+}
+
+.logo:hover {
+  color: var(--textColor);
+  border-bottom: 3px solid #158EFF;
+}
+
+nav {
+  margin: 0;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+nav ul li {
+  margin: auto 10px 20px 10px;
+  font-weight: 600;
+}
+
+nav ul li a h6 {
+  color: black;
+}
+
+nav ul li a h6:hover {
+  color: var(--textColor);
+  border-bottom: 2px solid #158EFF;
+}
+
+.intro-container {
+  gap: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: 'tacho' 'text' 'image';
+}
+
+.intro-tacho {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: tacho;
+}
+
+.intro-tacho ul {
+  text-align: center;
+}
+
+.intro-tacho-img {
+  display: block;
+  width: 80%;
+  margin: 20px auto 0 auto;
+}
+
+.intro-text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: text;
+}
+
+.intro-image {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: image;
+}
+
+.bundesländer-img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer-wrapper {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media screen and (min-width: 700px) {
+  .intro-container {
+    gap: 50px 20px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'tacho text' 'image image';
+  }
+  .intro-text {
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=default.css.map */

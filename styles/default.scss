@@ -54,25 +54,25 @@ h6 { font-size: 16px;}
 
 nav {
     margin: 0;
-}
 
-nav ul {
+    ul {
     display: flex;
     height: 100%;
-}
 
-nav ul li {
+        li {
     margin: auto 10px 20px 10px;
     font-weight: 600;
-}
 
-nav ul li a h6 {
+            a h6 {
     color: black;
-}
 
-nav ul li a h6:hover {
+            &:hover {
     color: var(--textColor);
     border-bottom: 2px solid #158EFF;
+                }
+            }
+        }
+    }
 }
 
 .intro-container{
@@ -88,10 +88,10 @@ nav ul li a h6:hover {
 
 .intro-tacho {
     grid-area: tacho;
-}
 
-.intro-tacho ul {
+    ul {
     text-align: center;
+    }
 }
 
 .intro-tacho-img {
