@@ -2,6 +2,7 @@
 html, body {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
   font-family: "Statis Sans", sans-serif;
 }
 
@@ -113,6 +114,14 @@ h6 {
 
 .intro__tacho ul {
   text-align: center;
+}
+
+.intro__tacho ul li a {
+  text-decoration: underline;
+}
+
+.intro__tacho ul li a:hover {
+  opacity: 0.8;
 }
 
 .intro__tacho__img {

@@ -5,6 +5,7 @@ $lightBlue: #158EFF;
 html, body {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
     font-family: "Statis Sans", sans-serif;
 }
 
@@ -91,7 +92,15 @@ h6 { font-size: 16px;}
         grid-area: tacho;
     
         ul {
-        text-align: center;
+            text-align: center;
+
+            li a {
+                text-decoration: underline;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
         }
 
         &__img {
