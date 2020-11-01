@@ -279,7 +279,6 @@ h6 {
     -ms-grid-rows: 60px;
         grid-template-rows: 60px;
         grid-template-areas: 'logo nav';
-    border-bottom: 1px solid #5C5B5B;
   }
   .navigation__toggle {
     display: none;
