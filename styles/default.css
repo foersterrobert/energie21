@@ -140,7 +140,7 @@ h6 {
   display: block;
   text-align: center;
   margin: 5px auto;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .intro__tacho__img__link:hover {
@@ -211,14 +211,14 @@ h6 {
 
 @media screen and (min-width: 700px) {
   .intro {
-    gap: 20px;
+    gap: 30px 0;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 'text tacho' 'image image';
   }
   .intro__text {
     width: 80%;
-    margin: 30% auto auto auto;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=default.css.map */

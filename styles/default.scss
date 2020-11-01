@@ -118,7 +118,7 @@ h6 { font-size: 16px;}
                 display: block;
                 text-align: center;
                 margin: 5px auto;
-                font-size: 10px;
+                font-size: 12px;
 
                 &:hover {
                     text-decoration: underline;
@@ -184,7 +184,7 @@ h6 { font-size: 16px;}
 
 @media screen and (min-width: 700px){
     .intro{
-        gap: 20px;
+        gap: 30px 0;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             'text tacho'
@@ -193,7 +193,7 @@ h6 { font-size: 16px;}
 
         &__text {
             width: 80%;
-            margin: 30% auto auto auto;
+            margin: auto;
         }
     }
 }
