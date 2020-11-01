@@ -63,23 +63,40 @@ h6 {
 
 .navigation__logo {
   display: block;
-  margin: auto 0 15px 2%;
   color: black;
+  height: 100%;
 }
 
-.navigation__logo:hover {
-  color: #5C5B5B;
-  border-bottom: 3px solid #158EFF;
+.navigation__logo__img {
+  display: block;
+  margin: 12px 0 0 2%;
+  height: 80%;
 }
 
 .navigation__nav {
   margin: 0;
+  -webkit-clip-path: circle(0px at top right);
+          clip-path: circle(0px at top right);
+  -webkit-transition: -webkit-clip-path ease-in-out 700ms;
+  transition: -webkit-clip-path ease-in-out 700ms;
+  transition: clip-path ease-in-out 700ms;
+  transition: clip-path ease-in-out 700ms, -webkit-clip-path ease-in-out 700ms;
+}
+
+.navigation__nav--open {
+  -webkit-clip-path: circle(250% at top right);
+          clip-path: circle(250% at top right);
+  /*   display: block; */
 }
 
 .navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
 }
 
@@ -95,6 +112,49 @@ h6 {
 .navigation__link:hover {
   color: #5C5B5B;
   border-bottom: 2px solid #158EFF;
+}
+
+.navigation__toggle {
+  padding: 1em;
+  top: .5em;
+  right: .5em;
+  margin: auto;
+  cursor: pointer;
+}
+
+.navigation__hamburger, .navigation__hamburger::before, .navigation__hamburger::after {
+  content: '';
+  display: block;
+  background: #8a8a85;
+  height: 3px;
+  width: 1.75em;
+  border-radius: 3px;
+  -webkit-transition: all ease-in-out 500ms;
+  transition: all ease-in-out 500ms;
+}
+
+.navigation__hamburger::before {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+
+.navigation__hamburger::after {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+.open .navigation__hamburger {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.open .navigation__hamburger::before {
+  opacity: 0;
+}
+
+.open .navigation__hamburger::after {
+  -webkit-transform: translateY(-3px) rotate(-90deg);
+          transform: translateY(-3px) rotate(-90deg);
 }
 
 .intro {
@@ -210,6 +270,19 @@ h6 {
 }
 
 @media screen and (min-width: 700px) {
+  .navigation__toggle {
+    display: none;
+  }
+  .navigation__nav {
+    -webkit-clip-path: initial;
+            clip-path: initial;
+  }
+  .navigation__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
   .intro {
     gap: 30px 0;
     -ms-grid-columns: 1fr 1fr;

@@ -45,21 +45,30 @@ h6 { font-size: 16px;}
 
     &__logo {
         display: block;
-        margin: auto 0 15px 2%;
         color: black;
+        height: 100%;
 
-        &:hover {
-            color: $darkGrey;
-            border-bottom: 3px solid $lightBlue;
+        &__img {
+            display: block;
+            margin: 12px 0 0 2%;
+            height: 80%;
         }
     }
 
     &__nav {
         margin: 0;
+        clip-path: circle(0px at top right);
+        transition: clip-path ease-in-out 700ms;
+
+        &--open {
+            clip-path: circle(250% at top right);
+          /*   display: block; */
+          }
     }
     
     &__list {
         display: flex;
+        flex-direction: column;
         height: 100%;
     }
 
@@ -76,6 +85,47 @@ h6 { font-size: 16px;}
             border-bottom: 2px solid $lightBlue;
         }
     }
+
+    &__toggle {
+        padding: 1em;
+        top: .5em;
+        right: .5em;
+        margin: auto;
+        cursor: pointer;
+      }
+
+      &__hamburger,
+      &__hamburger::before,
+      &__hamburger::after {
+        content: '';
+        display: block;
+        background: #8a8a85;
+        height: 3px;
+        width: 1.75em;
+        border-radius: 3px;
+        transition: all ease-in-out 500ms;
+      }
+      
+      &__hamburger::before {
+        transform: translateY(-6px);
+      }
+      
+      &__hamburger::after {
+        transform: translateY(3px);
+      }
+      
+      .open &__hamburger {
+        transform: rotate(45deg);
+      }
+      
+      .open &__hamburger::before {
+        opacity: 0;
+      }
+      
+      .open &__hamburger::after {
+        transform: translateY(-3px) rotate(-90deg);
+      }
+      
 }
 
 .intro{
@@ -183,6 +233,20 @@ h6 { font-size: 16px;}
 }
 
 @media screen and (min-width: 700px){
+    .navigation {
+        &__toggle {
+            display: none;
+          }
+    
+        &__nav {
+            clip-path: initial;
+        }
+
+        &__list {
+            flex-direction: row;
+        }
+    }
+
     .intro{
         gap: 30px 0;
         grid-template-columns: 1fr 1fr;
