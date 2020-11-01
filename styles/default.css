@@ -51,29 +51,33 @@ h6 {
 }
 
 .navigation {
-  height: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-bottom: 1px solid #5C5B5B;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 'logo toggle' 'nav nav';
 }
 
 .navigation__logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
   display: block;
   color: black;
-  height: 100%;
+  width: 200px;
 }
 
 .navigation__logo__img {
   display: block;
-  margin: 12px 0 0 2%;
-  height: 80%;
+  margin: 12px 0 0 5%;
+  width: 100%;
 }
 
 .navigation__nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
   margin: 0;
   -webkit-clip-path: circle(0px at top right);
           clip-path: circle(0px at top right);
@@ -93,16 +97,11 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
 }
 
 .navigation__element {
-  margin: auto 10px 20px 10px;
   font-weight: 600;
+  margin: 10px auto;
 }
 
 .navigation__link {
@@ -115,10 +114,13 @@ h6 {
 }
 
 .navigation__toggle {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: toggle;
   padding: 1em;
   top: .5em;
   right: .5em;
-  margin: auto;
+  margin: auto 5% auto auto;
   cursor: pointer;
 }
 
@@ -270,6 +272,15 @@ h6 {
 }
 
 @media screen and (min-width: 700px) {
+  .navigation {
+    gap: 30px 0;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 60px;
+        grid-template-rows: 60px;
+        grid-template-areas: 'logo nav';
+    border-bottom: 1px solid #5C5B5B;
+  }
   .navigation__toggle {
     display: none;
   }
@@ -278,10 +289,13 @@ h6 {
             clip-path: initial;
   }
   .navigation__list {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    margin-right: 5%;
+  }
+  .navigation__element {
+    margin: 20px 10px;
   }
   .intro {
     gap: 30px 0;

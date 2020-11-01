@@ -38,24 +38,28 @@ h6 { font-size: 16px;}
 
 
 .navigation {
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid $darkGrey;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'logo toggle'
+        'nav nav'
+        ;
 
     &__logo {
+        grid-area: logo;
         display: block;
         color: black;
-        height: 100%;
+        width: 200px;
 
         &__img {
             display: block;
-            margin: 12px 0 0 2%;
-            height: 80%;
+            margin: 12px 0 0 5%;
+            width: 100%;
         }
     }
 
     &__nav {
+        grid-area: nav;
         margin: 0;
         clip-path: circle(0px at top right);
         transition: clip-path ease-in-out 700ms;
@@ -68,13 +72,11 @@ h6 { font-size: 16px;}
     
     &__list {
         display: flex;
-        flex-direction: column;
-        height: 100%;
     }
 
     &__element {
-        margin: auto 10px 20px 10px;
         font-weight: 600;
+        margin: 10px auto;
     }
 
     &__link {
@@ -87,10 +89,11 @@ h6 { font-size: 16px;}
     }
 
     &__toggle {
+        grid-area: toggle;
         padding: 1em;
         top: .5em;
         right: .5em;
-        margin: auto;
+        margin: auto 5% auto auto;
         cursor: pointer;
       }
 
@@ -234,6 +237,14 @@ h6 { font-size: 16px;}
 
 @media screen and (min-width: 700px){
     .navigation {
+        gap: 30px 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 60px;
+        grid-template-areas:
+            'logo nav'
+            ;
+
+        border-bottom: 1px solid $darkGrey;
         &__toggle {
             display: none;
           }
@@ -243,7 +254,12 @@ h6 { font-size: 16px;}
         }
 
         &__list {
-            flex-direction: row;
+            justify-content: right;
+            margin-right: 5%;
+        }
+
+        &__element {
+            margin: 20px 10px;
         }
     }
 
