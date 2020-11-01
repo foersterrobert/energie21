@@ -101,7 +101,7 @@ h6 {
 
 .navigation__element {
   font-weight: 600;
-  margin: 10px auto;
+  margin: 8px auto;
 }
 
 .navigation__link {
@@ -120,7 +120,7 @@ h6 {
   padding: 1em;
   top: .5em;
   right: .5em;
-  margin: auto 5% auto auto;
+  margin: 12px 5% 0 auto;
   cursor: pointer;
 }
 
@@ -189,7 +189,7 @@ h6 {
 .intro__tacho__img {
   display: block;
   width: 80%;
-  margin: 20px auto 0 auto;
+  margin: 0 auto;
 }
 
 .intro__tacho__img__details {
