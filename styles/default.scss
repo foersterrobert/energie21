@@ -107,11 +107,31 @@ h6 { font-size: 16px;}
             display: block;
             width: 80%; 
             margin: 20px auto 0 auto;
+
+            &__details {
+                display: block;
+                width: 80%;
+                margin: 20px auto 5px auto;
+            }
+
+            &__link {
+                display: block;
+                text-align: center;
+                margin: 5px auto;
+                font-size: 10px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
     } 
     
     &__text {
+        display: block;
         grid-area: text;
+        margin: auto;
+        width: 90%;
     }
     
     &__image {
@@ -164,15 +184,16 @@ h6 { font-size: 16px;}
 
 @media screen and (min-width: 700px){
     .intro{
-        gap: 50px 20px;
+        gap: 20px;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-            'tacho text'
+            'text tacho'
             'image image'
             ;
 
         &__text {
-            margin: auto;
+            width: 80%;
+            margin: 30% auto auto auto;
         }
     }
 }
