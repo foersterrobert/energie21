@@ -1,4 +1,4 @@
-jQuery(".intro__text").fitText(1.2);
+jQuery(".intro__text").fitText(1.8);
 
 $('.navigation__toggle').click(function() {
   

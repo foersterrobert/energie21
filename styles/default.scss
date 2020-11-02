@@ -7,6 +7,7 @@ html, body {
     margin: 0;
     scroll-behavior: smooth;
     font-family: "Statis Sans", sans-serif;
+    background-color: white;
 }
 
 h1, h2, h3, h4, h5, h6, strong {
@@ -49,11 +50,11 @@ h6 { font-size: 16px;}
         grid-area: logo;
         display: block;
         color: black;
+        margin: 12px 0 0 20px;
         width: 200px;
 
         &__img {
             display: block;
-            margin: 12px 0 0 5%;
             width: 100%;
         }
     }
@@ -264,7 +265,7 @@ h6 { font-size: 16px;}
 
     .intro{
         gap: 30px 0;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 65% 35%;
         grid-template-areas:
             'text tacho'
             'image image'
