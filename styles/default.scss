@@ -195,10 +195,11 @@ h6 { font-size: 16px;}
 
 .details {
     &__text {
+
         border-bottom: 1px solid $darkGrey;
 
         h5 {
-            margin: 40px 5%;
+            margin: 40px 5% 80px 5%;
         }
     }
 
@@ -225,7 +226,7 @@ h6 { font-size: 16px;}
     &__img {
         width: 80%;
         display: block;
-        margin: 0 auto;
+        margin: 40px auto;
     }
 }
 
