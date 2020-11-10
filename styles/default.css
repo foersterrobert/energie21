@@ -234,7 +234,6 @@ h6 {
 }
 
 .details__windrad {
-  height: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,12 +241,13 @@ h6 {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   background-color: #f3e8a7;
+  padding: 30px 0;
   border-bottom: 1px solid #5C5B5B;
 }
 
 .details__windrad img {
   width: 40%;
-  margin: 20px auto;
+  max-height: 400px;
   -o-object-fit: contain;
      object-fit: contain;
 }
