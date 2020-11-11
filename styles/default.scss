@@ -6,7 +6,7 @@ html, body {
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
-    font-family: "Statis Sans", sans-serif;
+    font-family: 'Roboto Slab', serif;
     background-color: white;
 }
 
@@ -85,7 +85,7 @@ h6 { font-size: 16px;}
 
         &:hover {
             color: $darkGrey;
-            border-bottom: 2px solid $lightBlue;
+            border-bottom: 3px solid $lightBlue;
         }
     }
 
@@ -195,18 +195,17 @@ h6 { font-size: 16px;}
 
 .details {
     &__text {
-
         border-bottom: 1px solid $darkGrey;
 
         h5 {
+            font-size: calc(min(max(18px, 2.4vw), 26px));
             margin: 40px 5% 80px 5%;
         }
     }
 
-    &__windrad {
+    &__quelle {
         display: flex;
         justify-content: space-evenly;
-        background-color: #f3e8a7;
         padding: 30px 0;
         border-bottom: 1px solid $darkGrey;
     
@@ -242,6 +241,7 @@ h6 { font-size: 16px;}
         gap: 30px 0;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 60px;
+        margin-bottom: 20px;
         grid-template-areas:
             'logo nav'
             ;

@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  font-family: "Statis Sans", sans-serif;
+  font-family: 'Roboto Slab', serif;
   background-color: white;
 }
 
@@ -111,7 +111,7 @@ h6 {
 
 .navigation__link:hover {
   color: #5C5B5B;
-  border-bottom: 2px solid #158EFF;
+  border-bottom: 3px solid #158EFF;
 }
 
 .navigation__toggle {
@@ -230,29 +230,29 @@ h6 {
 }
 
 .details__text h5 {
+  font-size: calc(min(max(18px, 2.4vw), 26px));
   margin: 40px 5% 80px 5%;
 }
 
-.details__windrad {
+.details__quelle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-color: #f3e8a7;
   padding: 30px 0;
   border-bottom: 1px solid #5C5B5B;
 }
 
-.details__windrad img {
+.details__quelle img {
   width: 40%;
   max-height: 400px;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-.details__windrad h5 {
+.details__quelle h5 {
   margin: auto;
 }
 
@@ -279,6 +279,7 @@ h6 {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 60px;
         grid-template-rows: 60px;
+    margin-bottom: 20px;
         grid-template-areas: 'logo nav';
   }
   .navigation__toggle {
