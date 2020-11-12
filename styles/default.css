@@ -231,7 +231,8 @@ h6 {
 
 .details__text h5 {
   font-size: calc(min(max(18px, 2.4vw), 26px));
-  margin: 40px 5% 80px 5%;
+  margin: 0 5% 80px 5%;
+  padding-top: 40px;
 }
 
 .details__quelle {
@@ -259,7 +260,8 @@ h6 {
 .bundesländer__map {
   width: 80%;
   display: block;
-  margin: 40px auto;
+  padding: 40px 0;
+  margin: 0 auto;
 }
 
 .bundesländer__map path {

@@ -199,7 +199,8 @@ h6 { font-size: 16px;}
 
         h5 {
             font-size: calc(min(max(18px, 2.4vw), 26px));
-            margin: 40px 5% 80px 5%;
+            margin: 0 5% 80px 5%;
+            padding-top: 40px;
         }
     }
 
@@ -225,7 +226,8 @@ h6 { font-size: 16px;}
     &__map {
         width: 80%;
         display: block;
-        margin: 40px auto;
+        padding: 40px 0;
+        margin: 0 auto;
 
         path {
             fill: #158EFF;
