@@ -256,10 +256,22 @@ h6 {
   margin: auto;
 }
 
-.bundesländer__img {
+.bundesländer__map {
   width: 80%;
   display: block;
   margin: 40px auto;
+}
+
+.bundesländer__map path {
+  fill: #158EFF;
+  stroke: #8a8a85;
+  stroke-width: 4px;
+  -webkit-transition: fill 0.3s;
+  transition: fill 0.3s;
+}
+
+.bundesländer__map :hover {
+  fill: white;
 }
 
 .footer {
