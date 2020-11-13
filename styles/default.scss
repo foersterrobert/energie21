@@ -223,11 +223,18 @@ h6 { font-size: 16px;}
     }
 }
 
-#atom_svg {
+#photo_svg {
     path {
         fill: white;
         stroke: #5C5B5B;
-        stroke-width: 6px;
+        stroke-width: 40px;
+
+    }
+}
+
+#atom_svg {
+    path {
+        fill: white;
     }
 }
 

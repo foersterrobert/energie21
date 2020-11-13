@@ -258,10 +258,14 @@ h6 {
   margin: auto;
 }
 
-#atom_svg path {
+#photo_svg path {
   fill: white;
   stroke: #5C5B5B;
-  stroke-width: 6px;
+  stroke-width: 40px;
+}
+
+#atom_svg path {
+  fill: white;
 }
 
 .bundesländer__map {
