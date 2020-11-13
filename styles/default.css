@@ -129,7 +129,7 @@ h6 {
   cursor: pointer;
 }
 
-.navigation__toggle__hamburger, .navigation__toggle__hamburger::before, .navigation__toggle__hamburger::after {
+.navigation__hamburger, .navigation__hamburger::before, .navigation__hamburger::after {
   content: '';
   display: block;
   background: #e3e3e7;
@@ -140,32 +140,32 @@ h6 {
   transition: all ease-in-out 500ms;
 }
 
-.navigation__toggle__hamburger::before {
+.navigation__hamburger::before {
   -webkit-transform: translateY(-6px);
           transform: translateY(-6px);
 }
 
-.navigation__toggle__hamburger::after {
+.navigation__hamburger::after {
   -webkit-transform: translateY(3px);
           transform: translateY(3px);
 }
 
-.open .navigation__toggle__hamburger {
+.open .navigation__hamburger {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.open .navigation__toggle__hamburger::before {
+.open .navigation__hamburger::before {
   opacity: 0;
 }
 
-.open .navigation__toggle__hamburger::after {
+.open .navigation__hamburger::after {
   -webkit-transform: translateY(-3px) rotate(-90deg);
           transform: translateY(-3px) rotate(-90deg);
 }
 
 .intro {
-  padding-top: 70px;
+  padding-top: 110px;
   gap: 30px;
   display: -ms-grid;
   display: grid;
@@ -253,7 +253,7 @@ h6 {
 
 .details__quelle img, .details__quelle svg {
   width: 40%;
-  max-height: 500px;
+  max-height: 400px;
   -o-object-fit: contain;
      object-fit: contain;
   margin: auto;
@@ -328,6 +328,7 @@ h6 {
     margin: 20px 10px;
   }
   .intro {
+    padding-top: 70px;
     gap: 30px 0;
     -ms-grid-columns: 65% 35%;
         grid-template-columns: 65% 35%;
