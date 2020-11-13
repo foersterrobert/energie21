@@ -2,8 +2,8 @@ $darkGrey: #5C5B5B;
 $lightBlue: #158EFF;
 
 
-html, body {
-    padding: 0;
+body {
+    padding: 80px 0 0 0;
     margin: 0;
     scroll-behavior: smooth;
     font-family: 'Roboto Slab', serif;
@@ -137,7 +137,6 @@ h6 { font-size: 16px;}
 }
 
 .intro{
-    padding-top: 110px;
     gap: 30px;
     display: grid;
     grid-template-columns: 1fr;
@@ -298,7 +297,6 @@ h6 { font-size: 16px;}
     }
 
     .intro{
-        padding-top: 70px;
         gap: 30px 0;
         grid-template-columns: 65% 35%;
         grid-template-areas:
