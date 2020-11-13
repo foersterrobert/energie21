@@ -278,7 +278,7 @@ h6 {
 }
 
 .bundesländer__map {
-  width: 80%;
+  width: 90%;
   display: block;
   padding: 40px 0;
   margin: 0 auto;
@@ -342,6 +342,9 @@ h6 {
   .intro__text {
     width: 80%;
     margin: auto;
+  }
+  .bundesländer__map {
+    width: 70%;
   }
 }
 /*# sourceMappingURL=default.css.map */
