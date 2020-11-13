@@ -285,7 +285,7 @@ h6 {
 }
 
 .bundesländer__map path {
-  fill: #158EFF;
+  fill: #176e1ee3;
   stroke: #8a8a85;
   stroke-width: 4px;
   -webkit-transition: fill 0.3s;
@@ -293,7 +293,7 @@ h6 {
 }
 
 .bundesländer__map :hover {
-  fill: white;
+  fill: #457949e3;
 }
 
 .footer {
