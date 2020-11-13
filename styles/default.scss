@@ -39,6 +39,9 @@ h6 { font-size: 16px;}
 
 
 .navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: rgba(80, 81, 82, 0.98);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -131,12 +134,6 @@ h6 { font-size: 16px;}
         }
     }
 }
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
 
 
 .intro{
@@ -278,7 +275,6 @@ h6 { font-size: 16px;}
         gap: 30px 0;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 60px;
-        margin-bottom: 20px;
         grid-template-areas:
             'logo nav'
             ;

@@ -52,6 +52,9 @@ h6 {
 }
 
 .navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: rgba(80, 81, 82, 0.98);
   display: -ms-grid;
   display: grid;
@@ -159,12 +162,6 @@ h6 {
 .open .navigation__toggle__hamburger::after {
   -webkit-transform: translateY(-3px) rotate(-90deg);
           transform: translateY(-3px) rotate(-90deg);
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 .intro {
@@ -312,7 +309,6 @@ h6 {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 60px;
         grid-template-rows: 60px;
-    margin-bottom: 20px;
         grid-template-areas: 'logo nav';
   }
   .navigation__toggle {
