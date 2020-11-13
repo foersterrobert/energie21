@@ -210,15 +210,24 @@ h6 { font-size: 16px;}
         padding: 30px 0;
         border-bottom: 1px solid $darkGrey;
     
-        img {
+        img, svg {
             width: 40%;
             max-height: 400px;
             object-fit: contain;
+            margin: auto;
         }
     
         h5 {
             margin: auto;
         }
+    }
+}
+
+#atom_svg {
+    path {
+        fill: white;
+        stroke: #5C5B5B;
+        stroke-width: 6px;
     }
 }
 
@@ -239,8 +248,6 @@ h6 { font-size: 16px;}
         & :hover {
             fill: white;
         }
-
-
     }
 }
 
