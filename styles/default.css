@@ -248,7 +248,7 @@ h6 {
 
 .details__quelle img, .details__quelle svg {
   width: 40%;
-  max-height: 400px;
+  max-height: 500px;
   -o-object-fit: contain;
      object-fit: contain;
   margin: auto;
