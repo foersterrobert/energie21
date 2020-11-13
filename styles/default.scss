@@ -39,6 +39,7 @@ h6 { font-size: 16px;}
 
 
 .navigation {
+    background-color: rgba(80, 81, 82, 0.98);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -81,10 +82,10 @@ h6 { font-size: 16px;}
     }
 
     &__link {
-        color: black;
+        color: rgb(227, 227, 231);
 
         &:hover {
-            color: $darkGrey;
+            color: white;
             border-bottom: 3px solid $lightBlue;
         }
     }
@@ -96,43 +97,53 @@ h6 { font-size: 16px;}
         right: .5em;
         margin: 12px 5% 0 auto;
         cursor: pointer;
-      }
 
-      &__hamburger,
-      &__hamburger::before,
-      &__hamburger::after {
-        content: '';
-        display: block;
-        background: #8a8a85;
-        height: 3px;
-        width: 1.75em;
-        border-radius: 3px;
-        transition: all ease-in-out 500ms;
-      }
-      
-      &__hamburger::before {
-        transform: translateY(-6px);
-      }
-      
-      &__hamburger::after {
-        transform: translateY(3px);
-      }
-      
-      .open &__hamburger {
-        transform: rotate(45deg);
-      }
-      
-      .open &__hamburger::before {
-        opacity: 0;
-      }
-      
-      .open &__hamburger::after {
-        transform: translateY(-3px) rotate(-90deg);
-      }
-      
+        &__hamburger,
+        &__hamburger::before,
+        &__hamburger::after {
+            content: '';
+            display: block;
+            background: #8a8a85;
+            height: 3px;
+            width: 1.75em;
+            border-radius: 3px;
+            transition: all ease-in-out 500ms;
+        }
+        
+        &__hamburger::before {
+            transform: translateY(-6px);
+        }
+        
+        &__hamburger::after {
+            transform: translateY(3px);
+        }
+        
+        .open &__hamburger {
+            transform: rotate(45deg);
+        }
+        
+        .open &__hamburger::before {
+            opacity: 0;
+        }
+        
+        .open &__hamburger::after {
+            transform: translateY(-3px) rotate(-90deg);
+        }
+    }
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+.sticky + .content {
+    padding-top: 40px;
+  }
+
 .intro{
+    padding-top: 60px;
     gap: 30px;
     display: grid;
     grid-template-columns: 1fr;
