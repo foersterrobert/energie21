@@ -170,10 +170,9 @@ h6 {
 
 .intro {
   padding: 80px 0 30px 0;
-  background: #9e7bb6;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9e7bb6), color-stop(60%, #e88c8c), to(#ffddae));
-  background: linear-gradient(180deg, #9e7bb6 0%, #e88c8c 60%, #ffddae 100%);
-  border-bottom: 1px solid #8a8a85;
+  background: #6d67c9;
+  background: linear-gradient(172deg, #6d67c9 10%, #2a649f 60%, #29999d 100%);
+  border-bottom: 2px solid #5C5B5B;
 }
 
 .intro__title {
