@@ -157,7 +157,7 @@ h6 { font-size: 16px;}
 
 
 .intro {
-    padding: 80px 0 30px 0;
+    padding: 80px 0 0 0;
 
     &__title {
         text-align: center;
@@ -199,7 +199,7 @@ h6 { font-size: 16px;}
 
 
 .strom {
-    padding: 40px 0;
+    padding: 60px 0;
 
     &__intro{
         background-color: white;
@@ -395,6 +395,8 @@ h6 { font-size: 16px;}
 
 
     .strom {
+        padding: 60px 0;
+
         &__intro{
             gap: 30px 0;
             grid-template-columns: 65% 35%;

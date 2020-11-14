@@ -196,7 +196,7 @@ h6 {
 }
 
 .intro {
-  padding: 80px 0 30px 0;
+  padding: 80px 0 0 0;
 }
 
 .intro__title {
@@ -238,7 +238,7 @@ h6 {
 }
 
 .strom {
-  padding: 40px 0;
+  padding: 60px 0;
 }
 
 .strom__intro {
@@ -442,6 +442,9 @@ h6 {
   }
   .intro__info {
     width: 85%;
+  }
+  .strom {
+    padding: 60px 0;
   }
   .strom__intro {
     gap: 30px 0;
