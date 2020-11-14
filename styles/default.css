@@ -195,7 +195,7 @@ h6 {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-      grid-template-areas: 'tacho' 'text' 'image';
+      grid-template-areas: 'tacho' 'text';
 }
 
 .strom__intro__tacho {
@@ -248,10 +248,23 @@ h6 {
   width: 90%;
 }
 
-.strom__intro__image {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: image;
+.strom__bundesländer__map {
+  width: 90%;
+  display: block;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+.strom__bundesländer__map path {
+  fill: #176e1ee3;
+  stroke: #8a8a85;
+  stroke-width: 4px;
+  -webkit-transition: fill 0.3s;
+  transition: fill 0.3s;
+}
+
+.strom__bundesländer__map :hover {
+  fill: #457949e3;
 }
 
 .details__text {
@@ -285,35 +298,6 @@ h6 {
 
 .details__quelle h5 {
   margin: auto;
-}
-
-#photo_svg path {
-  fill: white;
-  stroke: #5C5B5B;
-  stroke-width: 40px;
-}
-
-#atom_svg path {
-  fill: white;
-}
-
-.bundesländer__map {
-  width: 90%;
-  display: block;
-  padding: 40px 0;
-  margin: 0 auto;
-}
-
-.bundesländer__map path {
-  fill: #176e1ee3;
-  stroke: #8a8a85;
-  stroke-width: 4px;
-  -webkit-transition: fill 0.3s;
-  transition: fill 0.3s;
-}
-
-.bundesländer__map :hover {
-  fill: #457949e3;
 }
 
 .footer {
@@ -367,13 +351,13 @@ h6 {
     gap: 30px 0;
     -ms-grid-columns: 65% 35%;
         grid-template-columns: 65% 35%;
-        grid-template-areas: 'text tacho' 'image image';
+        grid-template-areas: 'text tacho';
   }
   .strom__intro__text {
     width: 80%;
     margin: auto;
   }
-  .bundesländer__map {
+  .strom__bundesländer__map {
     width: 70%;
   }
 }

@@ -163,14 +163,13 @@ h6 { font-size: 16px;}
 
 
 .strom {
-        &__intro{
+    &__intro{
         gap: 30px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
             'tacho'
             'text'
-            'image'
             ;
 
         &__tacho {
@@ -218,12 +217,29 @@ h6 { font-size: 16px;}
             margin: auto;
             width: 90%;
         }
+    }
 
-        &__image {
-            grid-area: image;
+    &__bundesländer {
+        &__map {
+            width: 90%;
+            display: block;
+            padding: 40px 0;
+            margin: 0 auto;
+    
+            path {
+                fill: #176e1ee3;
+                stroke: #8a8a85;
+                stroke-width: 4px;
+                transition: fill 0.3s;
+            }
+    
+            & :hover {
+                fill: #457949e3;
+            }
         }
     }
 }
+
 
 .details {
     &__text {
@@ -255,47 +271,13 @@ h6 { font-size: 16px;}
     }
 }
 
-#photo_svg {
-    path {
-        fill: white;
-        stroke: #5C5B5B;
-        stroke-width: 40px;
-
-    }
-}
-
-#atom_svg {
-    path {
-        fill: white;
-    }
-}
-
-.bundesländer {
-    &__map {
-        width: 90%;
-        display: block;
-        padding: 40px 0;
-        margin: 0 auto;
-
-        path {
-            fill: #176e1ee3;
-            stroke: #8a8a85;
-            stroke-width: 4px;
-            transition: fill 0.3s;
-        }
-
-        & :hover {
-            fill: #457949e3;
-        }
-    }
-}
-
 
 .footer {
     padding: 20px 0;
     display: flex;
     justify-content: space-evenly;
 }
+
 
 @media screen and (min-width: 700px){
     .navigation {
@@ -347,7 +329,6 @@ h6 { font-size: 16px;}
             grid-template-columns: 65% 35%;
             grid-template-areas:
                 'text tacho'
-                'image image'
                 ;
 
             &__text {
@@ -355,11 +336,11 @@ h6 { font-size: 16px;}
                 margin: auto;
             }
         }
-    }
 
-    .bundesländer {
-        &__map {
-            width: 70%;
+        &__bundesländer {
+            &__map {
+                width: 70%;
+            }
         }
     }
 }
