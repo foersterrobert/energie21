@@ -205,11 +205,12 @@ h6 {
 
 .intro__info {
   gap: 2%;
-  margin: 40px 0;
+  margin: 40px auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  width: 95%;
 }
 
 .intro__info__card {
@@ -438,6 +439,9 @@ h6 {
   }
   .navigation__element {
     margin: 20px 10px;
+  }
+  .intro__info {
+    width: 85%;
   }
   .strom__intro {
     gap: 30px 0;
