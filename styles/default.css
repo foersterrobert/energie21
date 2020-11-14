@@ -7,7 +7,34 @@ body {
   margin: 0;
   scroll-behavior: smooth;
   font-family: 'Roboto Slab', serif;
-  background-color: white;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 h1, h2, h3, h4, h5, h6, strong {
@@ -170,9 +197,6 @@ h6 {
 
 .intro {
   padding: 80px 0 30px 0;
-  background: #6d67c9;
-  background: linear-gradient(172deg, #6d67c9 10%, #2a649f 60%, #29999d 100%);
-  border-bottom: 2px solid #5C5B5B;
 }
 
 .intro__title {
@@ -204,10 +228,11 @@ h6 {
 }
 
 .strom {
-  padding: 80px 0 20px 0;
+  padding: 80px 0 0;
 }
 
 .strom__intro {
+  padding-bottom: 20px;
   gap: 30px;
   display: -ms-grid;
   display: grid;
@@ -266,6 +291,10 @@ h6 {
   width: 90%;
 }
 
+.strom__bundesländer {
+  background-color: white;
+}
+
 .strom__bundesländer__map {
   width: 90%;
   display: block;
@@ -287,6 +316,7 @@ h6 {
 
 .details {
   padding: 80px 0 0 0;
+  background-color: #f3e8a7;
 }
 
 .details__quelle {
