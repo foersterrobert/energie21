@@ -4,7 +4,6 @@ html {
 }
 
 body {
-  padding: 80px 0 0 0;
   margin: 0;
   scroll-behavior: smooth;
   font-family: 'Roboto Slab', serif;
@@ -169,6 +168,14 @@ h6 {
           transform: translateY(-3px) rotate(-90deg);
 }
 
+.intro {
+  padding: 80px 0 30px 0;
+  background: #9e7bb6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9e7bb6), color-stop(60%, #e88c8c), to(#ffddae));
+  background: linear-gradient(180deg, #9e7bb6 0%, #e88c8c 60%, #ffddae 100%);
+  border-bottom: 1px solid #8a8a85;
+}
+
 .intro__title {
   text-align: center;
 }
@@ -191,6 +198,14 @@ h6 {
 
 .intro__info__card h4 {
   color: black;
+}
+
+.intro__text {
+  margin: 20px 10%;
+}
+
+.strom {
+  padding: 80px 0 20px 0;
 }
 
 .strom__intro {
@@ -269,6 +284,10 @@ h6 {
 
 .strom__bundesländer__map :hover {
   fill: #457949e3;
+}
+
+.details {
+  padding: 80px 0 0 0;
 }
 
 .details__quelle {
