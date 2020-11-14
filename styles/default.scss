@@ -157,6 +157,10 @@ h6 { font-size: 16px;}
             img {
                 width: 100%;
             }
+
+            h4 {
+                color: black;
+            }
         }
     }
 }
@@ -250,6 +254,7 @@ h6 { font-size: 16px;}
             'quelle__text quelle__text'
             ;
         padding: 30px 0;
+        gap: 30px 0;
         border-bottom: 1px solid #8a8a85;
 
         &--flip {
@@ -283,9 +288,20 @@ h6 { font-size: 16px;}
 
         &__text {
             grid-area: quelle__text;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
 
-            h5 {
-                margin: auto;
+            &__click {
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            &__content {
+                display: none;
             }
         }
     }
