@@ -305,9 +305,17 @@ h6 {
 }
 
 .strom__intro__tacho {
+  padding-top: 20px;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: tacho;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.strom__intro__tacho div {
+  margin: auto;
 }
 
 .strom__intro__tacho ul {
@@ -495,6 +503,9 @@ h6 {
   .strom__intro__text {
     width: 80%;
     margin: auto;
+  }
+  .strom__intro__tacho {
+    display: block;
   }
   .strom__bundesländer__map {
     width: 60%;

@@ -255,7 +255,13 @@ h6 { font-size: 16px;}
             ;
 
         &__tacho {
+            padding-top: 20px;
             grid-area: tacho;
+            display: flex;
+
+            div {
+                margin: auto;
+            }
 
             ul {
                 text-align: center;
@@ -443,6 +449,10 @@ h6 { font-size: 16px;}
             &__text {
                 width: 80%;
                 margin: auto;
+            }
+
+            &__tacho {
+                display: block;
             }
         }
 
