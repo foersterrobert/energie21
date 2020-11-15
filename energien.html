@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
 
-<body style="background-color: #f3e8a7;">
+<body>
     <header>
         <div class="navigation" id="navigation">
             <a href="index.html" class="navigation__logo" ><img class="navigation__logo__img" src="images/logo.png"></a>
@@ -27,47 +27,59 @@
 
 
     <section>
-        <div class="details" id="details__section">
-            <div style="background-color: #f3e8a7;" class="details__quelle">
-                <div class="details__quelle__image">
-                    <img src="images/windrad-icon.png">
+
+        <div class="slider">
+            <a href="#slide-1">1</a>
+            <a href="#slide-2">2</a>
+            
+            <div class="energien" id="energien__section">
+                <div style="background-color: #f3e8a7;" class="energien__quelle">
+                    <div class="energien__quelle__image">
+                        <img src="images/windrad-icon.png">
+                    </div>
+                    <div class="energien__quelle__video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/KIJRuNdt1tY" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="energien__quelle__text">
+                        <a class="energien__quelle__text__click energien__quelle__text__click--windrad">Mehr Lesen</a>
+                        <h5 class="energien__quelle__text__content energien__quelle__text__content--windrad">Windkraft beschreibt die technische und oft großflächige Umwandlung und Verwendung von Wind als eine erneuerbare Energiequelle. 
+                            Windenergie ist sehr nachhaltig und hat ausschließlich lokale Nachteile. Windkraft ist momentan, und wird dies geraume Zeit auch bleiben, die wichtigste erneuerbare Energiequelle.</h5>
+                    </div>
                 </div>
-                <div class="details__quelle__video">
-                    <iframe src="https://www.youtube-nocookie.com/embed/KIJRuNdt1tY" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="details__quelle__text">
-                    <a class="details__quelle__text__click details__quelle__text__click--windrad">Mehr Lesen</a>
-                    <h5 class="details__quelle__text__content details__quelle__text__content--windrad">Windkraft beschreibt die technische und oft großflächige Umwandlung und Verwendung von Wind als eine erneuerbare Energiequelle. 
-                        Windenergie ist sehr nachhaltig und hat ausschließlich lokale Nachteile. Windkraft ist momentan, und wird dies geraume Zeit auch bleiben, die wichtigste erneuerbare Energiequelle.</h5>
+
+                <div style="background-color: #BED7DE;" class="energien__quelle energien__quelle--flip">
+                    <div class="energien__quelle__video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/ZFlG4bz0Cfg" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="energien__quelle__image">
+                        <img src="images/photovoltaik-icon.png">
+                    </div>
+                    <div class="energien__quelle__text">
+                        <a class="energien__quelle__text__click energien__quelle__text__click--photovoltaik">Mehr Lesen</a>
+                        <h5 class="energien__quelle__text__content energien__quelle__text__content--photovoltaik">Photovoltaik ist die Umwandlung von Lichtenergie, mithilfe von Solarzellen, in elektrische Energie. 
+                            Aus der hierfür fasst immer benutzten Sonnenenergie wird mit dem Photoelektrischen Effekt in den Solarzellen Strom gewonnen.</h5>
+                    </div>
                 </div>
             </div>
+        </div>
 
-            <div style="background-color: #BED7DE;" class="details__quelle details__quelle--flip">
-                <div class="details__quelle__video">
-                    <iframe src="https://www.youtube-nocookie.com/embed/ZFlG4bz0Cfg" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="details__quelle__image">
-                    <img src="images/photovoltaik-icon.png">
-                </div>
-                <div class="details__quelle__text">
-                    <a class="details__quelle__text__click details__quelle__text__click--photovoltaik">Mehr Lesen</a>
-                    <h5 class="details__quelle__text__content details__quelle__text__content--photovoltaik">Photovoltaik ist die Umwandlung von Lichtenergie, mithilfe von Solarzellen, in elektrische Energie. 
-                        Aus der hierfür fasst immer benutzten Sonnenenergie wird mit dem Photoelektrischen Effekt in den Solarzellen Strom gewonnen.</h5>
-                </div>
-            </div>
-
-            <div style="background-color: #74A7D4;" class="details__quelle">
-                <div class="details__quelle__image">
-                    <img src="images/atom-icon.png">
-                </div>
-                <div class="details__quelle__video">
-                    <iframe src="https://www.youtube-nocookie.com/embed/CtD7xLLNODg" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="details__quelle__text">
-                    <a class="details__quelle__text__click details__quelle__text__click--atom">Mehr Lesen</a>
-                    <h5 class="details__quelle__text__content details__quelle__text__content--atom">Mit dem Begriff Atomkraft wird primär die technische Erzeugung von Energie durch Kernspaltung bezeichnet. 
-                        Atomkraftwerke geben keine chemischen Schadstoffe ab und sind demnach nicht direkt umweltschädlich. Sie haben jedoch viele 
-                        andere Nachteile wie radioaktive Überreste, Missbrauchspotential und große Konsequenzen im Fall von fehlern.</h5>
+        <div class="slider">
+            <a href="#slide-1">1</a>
+            
+            <div class="energien" id="energien__section">
+                <div style="background-color: #74A7D4;" class="energien__quelle">
+                    <div class="energien__quelle__image">
+                        <img src="images/atom-icon.png">
+                    </div>
+                    <div class="energien__quelle__video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/CtD7xLLNODg" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="energien__quelle__text">
+                        <a class="energien__quelle__text__click energien__quelle__text__click--atom">Mehr Lesen</a>
+                        <h5 class="energien__quelle__text__content energien__quelle__text__content--atom">Mit dem Begriff Atomkraft wird primär die technische Erzeugung von Energie durch Kernspaltung bezeichnet. 
+                            Atomkraftwerke geben keine chemischen Schadstoffe ab und sind demnach nicht direkt umweltschädlich. Sie haben jedoch viele 
+                            andere Nachteile wie radioaktive Überreste, Missbrauchspotential und große Konsequenzen im Fall von fehlern.</h5>
+                    </div>
                 </div>
             </div>
         </div>

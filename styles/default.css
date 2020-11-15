@@ -404,12 +404,56 @@ h6 {
   fill: #457949e3;
 }
 
-.details {
-  padding: 80px 0 0 0;
-  background-color: #f3e8a7;
+.energien {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
-.details__quelle {
+.energien::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.energien::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+.energien::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.energien > div {
+  scroll-snap-align: start;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+  margin-right: 50px;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #8a8a85;
+}
+
+.energien > div:target {
+  /*   transform: scale(0.8); */
+}
+
+.energien__quelle {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -420,18 +464,18 @@ h6 {
   border-bottom: 1px solid #8a8a85;
 }
 
-.details__quelle--flip {
+.energien__quelle--flip {
       grid-template-areas: 'quelle__video quelle__img' 'quelle__text quelle__text';
 }
 
-.details__quelle__image {
+.energien__quelle__image {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: quelle__img;
   width: 100%;
 }
 
-.details__quelle__image img {
+.energien__quelle__image img {
   width: 80%;
   max-height: 400px;
   -o-object-fit: contain;
@@ -439,19 +483,19 @@ h6 {
   margin: auto;
 }
 
-.details__quelle__video {
+.energien__quelle__video {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: quelle__video;
 }
 
-.details__quelle__video iframe {
+.energien__quelle__video iframe {
   margin: auto;
   width: 80%;
   height: 100%;
 }
 
-.details__quelle__text {
+.energien__quelle__text {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -471,11 +515,11 @@ h6 {
           flex-direction: column;
 }
 
-.details__quelle__text__click:hover {
+.energien__quelle__text__click:hover {
   cursor: pointer;
 }
 
-.details__quelle__text__content {
+.energien__quelle__text__content {
   display: none;
 }
 
@@ -518,6 +562,9 @@ h6 {
   }
   .intro__info {
     width: 85%;
+  }
+  .slider {
+    width: 70%;
   }
   .strom__intro {
     gap: 30px 0;
