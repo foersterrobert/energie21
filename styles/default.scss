@@ -406,12 +406,12 @@ h6 { font-size: 16px;}
 
         &__image {
             grid-area: quelle__img;
-            width: 100%;
 
             img {
                 width: 80%;
                 max-height: 400px;
                 object-fit: contain;
+                display: block;
                 margin: auto;
             }
         }
@@ -423,6 +423,7 @@ h6 { font-size: 16px;}
                 margin: auto;
                 width: 80%;
                 height: 100%;
+                display: block;
             }
         }
 
@@ -446,10 +447,21 @@ h6 { font-size: 16px;}
                 }
                 &:hover {
                     cursor: pointer;
+
+                    a {
+                        text-decoration: underline;
+                        color: #919191;
+                    }
+
+                    svg {
+                        fill: #919191;
+                    }
                 }
             }
 
             &__content {
+                width: 90%;
+                margin: auto;
                 display: none;
             }
         }

@@ -472,7 +472,6 @@ h6 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: quelle__img;
-  width: 100%;
 }
 
 .energien__quelle__image img {
@@ -480,6 +479,7 @@ h6 {
   max-height: 400px;
   -o-object-fit: contain;
      object-fit: contain;
+  display: block;
   margin: auto;
 }
 
@@ -493,6 +493,7 @@ h6 {
   margin: auto;
   width: 80%;
   height: 100%;
+  display: block;
 }
 
 .energien__quelle__text {
@@ -537,7 +538,18 @@ h6 {
   cursor: pointer;
 }
 
+.energien__quelle__text__click:hover a {
+  text-decoration: underline;
+  color: #919191;
+}
+
+.energien__quelle__text__click:hover svg {
+  fill: #919191;
+}
+
 .energien__quelle__text__content {
+  width: 90%;
+  margin: auto;
   display: none;
 }
 
