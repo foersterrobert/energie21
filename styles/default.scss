@@ -12,7 +12,7 @@ body {
     font-family: 'Roboto Slab', serif;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 9s ease infinite;
 
 }
 
@@ -57,6 +57,7 @@ h6 { font-size: 16px;}
 
 
 .navigation {
+    z-index: 3;
     padding-bottom: 15px;
     position: fixed;
     top: 0;
@@ -197,18 +198,54 @@ h6 { font-size: 16px;}
     }
 }
 
+.slider {
+    width: 80%;
+    overflow: hidden;
+    margin: 40px auto;
+  }
 
 .strom {
-    padding: 60px 0 0 0;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    
 
-    &__intro{
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+    &::-webkit-scrollbar-thumb {
+        background: black;
+        border-radius: 10px;
+      }
+    &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+    & > div {
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        width: 100%;
+        margin-right: 50px;
+        transform-origin: center center;
+        transform: scale(1);
+        transition: transform 0.5s;
+        position: relative;
+
         background-color: white;
-        margin: 0 4% 6% 4%;
         -webkit-box-shadow: 6px 5px 16px 0px rgba(0,0,0,0.8); 
         box-shadow: 6px 5px 16px 0px rgba(0,0,0,0.8);
         border-radius: 10px;
         border: 1px solid #8a8a85;
-        padding: 40px 10px;
+    }
+
+    & > div:target {
+      /*   transform: scale(0.8); */
+      }
+
+    &__intro{
         gap: 30px;
         display: grid;
         grid-template-columns: 1fr;
@@ -263,16 +300,8 @@ h6 { font-size: 16px;}
     }
 
     &__bundesländer {
-        background-color: white;
-        margin: 0 4% 6% 4%;
-        -webkit-box-shadow: 6px 5px 16px 0px rgba(0,0,0,0.8); 
-        box-shadow: 6px 5px 16px 0px rgba(0,0,0,0.8);
-        border-radius: 10px;
-        border: 1px solid #8a8a85;
-        padding: 20px 10px;
 
         &__map {
-            
             width: 90%;
             display: block;
             padding: 20px 0;
@@ -419,7 +448,7 @@ h6 { font-size: 16px;}
 
         &__bundesländer {
             &__map {
-                width: 70%;
+                width: 60%;
             }
         }
     }

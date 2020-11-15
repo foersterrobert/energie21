@@ -9,8 +9,8 @@ body {
   font-family: 'Roboto Slab', serif;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  -webkit-animation: gradient 15s ease infinite;
-          animation: gradient 15s ease infinite;
+  -webkit-animation: gradient 9s ease infinite;
+          animation: gradient 9s ease infinite;
 }
 
 @-webkit-keyframes gradient {
@@ -82,6 +82,7 @@ h6 {
 }
 
 .navigation {
+  z-index: 3;
   padding-bottom: 15px;
   position: fixed;
   top: 0;
@@ -237,18 +238,64 @@ h6 {
   margin: 20px 0;
 }
 
-.strom {
-  padding: 60px 0 0 0;
+.slider {
+  width: 80%;
+  overflow: hidden;
+  margin: 40px auto;
 }
 
-.strom__intro {
+.strom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.strom::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.strom::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+.strom::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.strom > div {
+  scroll-snap-align: start;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+  margin-right: 50px;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  position: relative;
   background-color: white;
-  margin: 0 4% 6% 4%;
   -webkit-box-shadow: 6px 5px 16px 0px rgba(0, 0, 0, 0.8);
   box-shadow: 6px 5px 16px 0px rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   border: 1px solid #8a8a85;
-  padding: 40px 10px;
+}
+
+.strom > div:target {
+  /*   transform: scale(0.8); */
+}
+
+.strom__intro {
   gap: 30px;
   display: -ms-grid;
   display: grid;
@@ -303,16 +350,6 @@ h6 {
   -ms-grid-column: 1;
   grid-area: text;
   width: 90%;
-}
-
-.strom__bundesländer {
-  background-color: white;
-  margin: 0 4% 6% 4%;
-  -webkit-box-shadow: 6px 5px 16px 0px rgba(0, 0, 0, 0.8);
-  box-shadow: 6px 5px 16px 0px rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
-  border: 1px solid #8a8a85;
-  padding: 20px 10px;
 }
 
 .strom__bundesländer__map {
@@ -460,7 +497,7 @@ h6 {
     margin: auto;
   }
   .strom__bundesländer__map {
-    width: 70%;
+    width: 60%;
   }
 }
 /*# sourceMappingURL=default.css.map */
