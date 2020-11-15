@@ -141,18 +141,18 @@ h6 { font-size: 16px;}
     &__hamburger::after {
         transform: translateY(3px);
     }
-    
-    .open &__hamburger {
-        transform: rotate(45deg);
-    }
-    
-    .open &__hamburger::before {
-        opacity: 0;
-    }
-    
-    .open &__hamburger::after {
-        transform: translateY(-3px) rotate(-90deg);
-    }
+}
+
+.open .navigation__hamburger {
+    transform: rotate(45deg);
+}
+
+.open .navigation__hamburger::before {
+    opacity: 0;
+}
+
+.open .navigation__hamburger::after {
+    transform: translateY(-3px) rotate(-90deg);
 }
 
 
@@ -434,7 +434,16 @@ h6 { font-size: 16px;}
             flex-direction: column;
 
             &__click {
+                display: flex;
 
+                svg {
+                    margin-left: 8px;
+                    width: 20px;
+                    fill: #8a8a85;
+                    stroke: #5C5B5B;
+                    stroke-width: 3px;
+                    transition: transform 0.5s;
+                }
                 &:hover {
                     cursor: pointer;
                 }
@@ -445,6 +454,10 @@ h6 { font-size: 16px;}
             }
         }
     }
+}
+
+.rotate {
+    transform: rotate(90deg);
 }
 
 

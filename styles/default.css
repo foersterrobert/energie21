@@ -515,12 +515,35 @@ h6 {
           flex-direction: column;
 }
 
+.energien__quelle__text__click {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.energien__quelle__text__click svg {
+  margin-left: 8px;
+  width: 20px;
+  fill: #8a8a85;
+  stroke: #5C5B5B;
+  stroke-width: 3px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
 .energien__quelle__text__click:hover {
   cursor: pointer;
 }
 
 .energien__quelle__text__content {
   display: none;
+}
+
+.rotate {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .footer {

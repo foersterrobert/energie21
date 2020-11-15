@@ -12,14 +12,13 @@ $('.navigation__toggle').click(function() {
     $(this).toggleClass('open');
   })
 
-$('.energien__quelle__text__click--windrad').click(function() {
-  $('.energien__quelle__text__content--windrad').slideToggle();
+$('.energien__quelle__text__click--e').click(function() {
+  $('.energien__quelle__text__content--e').slideToggle();
+  $('.energien__quelle__text__click--e svg').toggleClass('rotate');
 })
 
-$('.energien__quelle__text__click--photovoltaik').click(function() {
-  $('.energien__quelle__text__content--photovoltaik').slideToggle();
-})
 
-$('.energien__quelle__text__click--atom').click(function() {
-  $('.energien__quelle__text__content--atom').slideToggle();
+$('.energien__quelle__text__click--f').click(function() {
+  $('.energien__quelle__text__content--f').slideToggle();
+  $('.energien__quelle__text__click--f svg').toggleClass('rotate');
 })
