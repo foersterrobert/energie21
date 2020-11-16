@@ -452,7 +452,7 @@ h6 {
   scroll-snap-align: start;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 100%;
+  width: 99%;
   margin-right: 50px;
   -webkit-transform-origin: center center;
           transform-origin: center center;
