@@ -387,9 +387,15 @@ h6 {
 
 .strom__bundesländer__map {
   width: 90%;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 20px 0;
   margin: 0 auto;
+}
+
+.strom__bundesländer__map svg {
+  width: 100%;
 }
 
 .strom__bundesländer__map path {
@@ -456,15 +462,15 @@ h6 {
 .energien__quelle {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
       grid-template-areas: 'quelle__img quelle__video' 'quelle__text quelle__text';
   padding: 30px 0;
-  gap: 30px 0;
-  border-bottom: 1px solid #8a8a85;
 }
 
 .energien__quelle--flip {
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
       grid-template-areas: 'quelle__video quelle__img' 'quelle__text quelle__text';
 }
 
@@ -472,11 +478,16 @@ h6 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: quelle__img;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .energien__quelle__image img {
   width: 80%;
-  max-height: 400px;
   -o-object-fit: contain;
      object-fit: contain;
   display: block;
@@ -487,12 +498,16 @@ h6 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: quelle__video;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .energien__quelle__video iframe {
   margin: auto;
-  width: 80%;
-  height: 100%;
   display: block;
 }
 

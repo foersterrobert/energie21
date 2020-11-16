@@ -328,9 +328,13 @@ h6 { font-size: 16px;}
 
         &__map {
             width: 90%;
-            display: block;
+            display: flex;
             padding: 20px 0;
             margin: 0 auto;
+
+            svg {
+                width: 100%;
+            }
     
             path {
                 fill: #176e1ee3;
@@ -388,16 +392,15 @@ h6 { font-size: 16px;}
 
     &__quelle {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 40% 60%;
         grid-template-areas:
             'quelle__img quelle__video'
             'quelle__text quelle__text'
             ;
         padding: 30px 0;
-        gap: 30px 0;
-        border-bottom: 1px solid #8a8a85;
 
         &--flip {
+            grid-template-columns: 60% 40%;
             grid-template-areas:
             'quelle__video quelle__img'
             'quelle__text quelle__text'
@@ -406,10 +409,11 @@ h6 { font-size: 16px;}
 
         &__image {
             grid-area: quelle__img;
+            display: flex;
+            align-items: center;   
 
             img {
                 width: 80%;
-                max-height: 400px;
                 object-fit: contain;
                 display: block;
                 margin: auto;
@@ -418,11 +422,11 @@ h6 { font-size: 16px;}
 
         &__video {
             grid-area: quelle__video;
+            display: flex;
+            align-items: center;            
 
             iframe {
                 margin: auto;
-                width: 80%;
-                height: 100%;
                 display: block;
             }
         }
