@@ -402,6 +402,7 @@ h6 { font-size: 16px;}
         display: grid;
         grid-template-columns: 40% 60%;
         grid-template-areas:
+            'quelle__title quelle__title'
             'quelle__img quelle__video'
             'quelle__text quelle__text'
             ;
@@ -410,9 +411,15 @@ h6 { font-size: 16px;}
         &--flip {
             grid-template-columns: 60% 40%;
             grid-template-areas:
+            'quelle__title quelle__title'
             'quelle__video quelle__img'
             'quelle__text quelle__text'
             ;
+        }
+
+        &__title {
+            grid-area: quelle__title;
+            text-align: center;
         }
 
         &__image {
