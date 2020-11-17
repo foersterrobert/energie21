@@ -12,11 +12,12 @@ $('.navigation__toggle').click(function() {
     $(this).toggleClass('open');
   })
 
+
+
 $('.energien__quelle__text__click--e').click(function() {
   $('.energien__quelle__text__content--e').slideToggle();
   $('.energien__quelle__text__click--e svg').toggleClass('rotate');
 })
-
 
 $('.energien__quelle__text__click--f').click(function() {
   $('.energien__quelle__text__content--f').slideToggle();

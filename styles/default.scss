@@ -219,13 +219,15 @@ h6 { font-size: 16px;}
         &__info {
             width: 20%;
             display: flex;
+
             img {
                 height: 70%;
                 margin: auto 5px;
                 display: block;
             }
 
-            h3 {
+            &__title {
+                font-size: calc(min(max(14px, 3.5vw), 24px));
                 margin: auto 0;
                 color: white;
             }
@@ -315,7 +317,6 @@ h6 { font-size: 16px;}
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
-            'header'
             'tacho'
             'text'
             ;

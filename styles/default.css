@@ -280,7 +280,8 @@ h6 {
   display: block;
 }
 
-.slider__header__info h3 {
+.slider__header__info__title {
+  font-size: calc(min(max(14px, 3.5vw), 24px));
   margin: auto 0;
   color: white;
 }
@@ -386,7 +387,7 @@ h6 {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-      grid-template-areas: 'header' 'tacho' 'text';
+      grid-template-areas: 'tacho' 'text';
 }
 
 .strom__intro__tacho {
