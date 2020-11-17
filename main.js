@@ -1,4 +1,4 @@
-jQuery(".intro__text").fitText(2);
+jQuery(".intro__text").fitText(2.4);
 
 jQuery(".intro__text--2").fitText(3);
 
