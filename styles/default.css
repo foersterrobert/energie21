@@ -246,6 +246,63 @@ h6 {
   width: 80%;
   overflow: hidden;
   margin: 40px auto;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+.slider__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 70px;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  background-color: #919191;
+}
+
+.slider__header__info {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider__header__info img {
+  height: 70%;
+  margin: auto 5px;
+  display: block;
+}
+
+.slider__header__info h3 {
+  margin: auto 0;
+  color: white;
+}
+
+.slider__header ul {
+  margin-right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider__header ul li {
+  margin: auto 5px;
+}
+
+.slider__header ul li a {
+  color: white;
+  font-size: 18px;
+}
+
+.slider__header ul li a:hover {
+  text-decoration: underline;
 }
 
 .slider > a {
@@ -301,11 +358,10 @@ h6 {
 }
 
 .strom > div {
-  padding: 30px 0;
   scroll-snap-align: start;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 100%;
+  width: 99%;
   margin-right: 50px;
   -webkit-transform-origin: center center;
           transform-origin: center center;
@@ -326,17 +382,16 @@ h6 {
 }
 
 .strom__intro {
-  gap: 30px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-      grid-template-areas: 'tacho' 'text';
+      grid-template-areas: 'header' 'tacho' 'text';
 }
 
 .strom__intro__tacho {
-  padding-top: 20px;
-  -ms-grid-row: 1;
+  padding-top: 10px;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: tacho;
   display: -webkit-box;
@@ -384,30 +439,19 @@ h6 {
 }
 
 .strom__intro__text {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: text;
   width: 90%;
 }
 
-.strom__bundesländer__map {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+.strom__graph img {
+  width: 90%;
 }
 
-.strom__bundesländer__map ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: auto;
+.strom__bundesländer__map {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 .strom__bundesländer__map svg {
@@ -425,6 +469,242 @@ h6 {
 
 .strom__bundesländer__map :hover {
   fill: #457949e3;
+}
+
+.verkehr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.verkehr::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.verkehr::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+.verkehr::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.verkehr > div {
+  scroll-snap-align: start;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 99%;
+  margin-right: 50px;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #8a8a85;
+}
+
+.verkehr > div:target {
+  /*   transform: scale(0.8); */
+}
+
+.verkehr__intro {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: 'header' 'tacho' 'text';
+}
+
+.verkehr__intro__tacho {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: tacho;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.verkehr__intro__tacho div {
+  margin: auto;
+}
+
+.verkehr__intro__tacho ul {
+  text-align: center;
+}
+
+.verkehr__intro__tacho ul li a {
+  text-decoration: underline;
+}
+
+.verkehr__intro__tacho ul li a:hover {
+  opacity: 0.8;
+}
+
+.verkehr__intro__tacho__img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.verkehr__intro__tacho__img__details {
+  display: block;
+  width: 80%;
+  margin: 20px auto 5px auto;
+}
+
+.verkehr__intro__tacho__img__link {
+  display: block;
+  text-align: center;
+  margin: 5px auto;
+  font-size: 12px;
+}
+
+.verkehr__intro__tacho__img__link:hover {
+  text-decoration: underline;
+}
+
+.verkehr__intro__text {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: text;
+  width: 90%;
+}
+
+.wärme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wärme::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.wärme::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+.wärme::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.wärme > div {
+  scroll-snap-align: start;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 99%;
+  margin-right: 50px;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #8a8a85;
+}
+
+.wärme > div:target {
+  /*   transform: scale(0.8); */
+}
+
+.wärme__intro {
+  gap: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: 'header' 'tacho' 'text';
+}
+
+.wärme__intro__header {
+  height: 40px;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  background-color: #919191;
+}
+
+.wärme__intro__tacho {
+  padding-top: 20px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: tacho;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wärme__intro__tacho div {
+  margin: auto;
+}
+
+.wärme__intro__tacho ul {
+  text-align: center;
+}
+
+.wärme__intro__tacho ul li a {
+  text-decoration: underline;
+}
+
+.wärme__intro__tacho ul li a:hover {
+  opacity: 0.8;
+}
+
+.wärme__intro__tacho__img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wärme__intro__tacho__img__details {
+  display: block;
+  width: 80%;
+  margin: 20px auto 5px auto;
+}
+
+.wärme__intro__tacho__img__link {
+  display: block;
+  text-align: center;
+  margin: 5px auto;
+  font-size: 12px;
+}
+
+.wärme__intro__tacho__img__link:hover {
+  text-decoration: underline;
+}
+
+.wärme__intro__text {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: text;
+  width: 90%;
 }
 
 .energien {
@@ -638,14 +918,10 @@ h6 {
   .intro__info {
     width: 85%;
   }
-  .slider {
-    width: 70%;
-  }
   .strom__intro {
-    gap: 30px 0;
     -ms-grid-columns: 65% 35%;
         grid-template-columns: 65% 35%;
-        grid-template-areas: 'text tacho';
+        grid-template-areas: 'header header' 'text tacho';
   }
   .strom__intro__text {
     width: 80%;
@@ -655,16 +931,33 @@ h6 {
     display: block;
   }
   .strom__bundesländer__map {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    width: 40%;
   }
-  .strom__bundesländer__map ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .verkehr__intro {
+    gap: 30px 0;
+    -ms-grid-columns: 65% 35%;
+        grid-template-columns: 65% 35%;
+        grid-template-areas: 'header header' 'text tacho';
+  }
+  .verkehr__intro__text {
+    width: 80%;
+    margin: auto;
+  }
+  .verkehr__intro__tacho {
+    display: block;
+  }
+  .wärme__intro {
+    gap: 30px 0;
+    -ms-grid-columns: 65% 35%;
+        grid-template-columns: 65% 35%;
+        grid-template-areas: 'header header' 'text tacho';
+  }
+  .wärme__intro__text {
+    width: 80%;
+    margin: auto;
+  }
+  .wärme__intro__tacho {
+    display: block;
   }
 }
 /*# sourceMappingURL=default.css.map */

@@ -205,6 +205,50 @@ h6 { font-size: 16px;}
     width: 80%;
     overflow: hidden;
     margin: 40px auto;
+    grid-area: header;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+        grid-area: header;
+        background-color: #919191;
+
+        &__info {
+            width: 20%;
+            display: flex;
+            img {
+                height: 70%;
+                margin: auto 5px;
+                display: block;
+            }
+
+            h3 {
+                margin: auto 0;
+                color: white;
+            }
+        }
+
+        ul {
+            margin-right: 5px;
+            display: flex;
+
+            li {
+                margin: auto 5px;
+
+                a {
+                    color: white;
+                    font-size: 18px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
 
     & > a {
         display: inline-flex;
@@ -249,10 +293,9 @@ h6 { font-size: 16px;}
       }
 
     & > div {
-        padding: 30px 0;
         scroll-snap-align: start;
         flex-shrink: 0;
-        width: 100%;
+        width: 99%;
         margin-right: 50px;
         transform-origin: center center;
         transform: scale(1);
@@ -269,16 +312,17 @@ h6 { font-size: 16px;}
       }
 
     &__intro{
-        gap: 30px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
+            'header'
             'tacho'
             'text'
             ;
 
+
         &__tacho {
-            padding-top: 20px;
+            padding-top: 10px;
             grid-area: tacho;
             display: flex;
 
@@ -328,18 +372,15 @@ h6 { font-size: 16px;}
         }
     }
 
+    &__graph {
+        img {
+            width: 90%;
+        }
+    }
+
     &__bundesländer {
-
         &__map {
-            display: grid;
             grid-template-columns: 1fr;
-
-            ul {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                margin: auto;
-            }
 
             svg {
                 width: 90%;
@@ -356,6 +397,214 @@ h6 { font-size: 16px;}
             & :hover {
                 fill: #457949e3;
             }
+        }
+    }
+}
+
+.verkehr {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+    &::-webkit-scrollbar-thumb {
+        background: black;
+        border-radius: 10px;
+      }
+    &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+    & > div {
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        width: 99%;
+        margin-right: 50px;
+        transform-origin: center center;
+        transform: scale(1);
+        transition: transform 0.5s;
+        position: relative;
+
+        background-color: white;
+        border-radius: 10px;
+        border: 1px solid #8a8a85;
+    }
+
+    & > div:target {
+      /*   transform: scale(0.8); */
+      }
+
+    &__intro{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'header'
+            'tacho'
+            'text'
+            ;
+
+        &__tacho {
+            grid-area: tacho;
+            display: flex;
+
+            div {
+                margin: auto;
+            }
+
+            ul {
+                text-align: center;
+
+                li a {
+                    text-decoration: underline;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+
+            &__img {
+                display: block;
+                width: 80%; 
+                margin: 0 auto;
+
+                &__details {
+                    display: block;
+                    width: 80%;
+                    margin: 20px auto 5px auto;
+                }
+
+                &__link {
+                    display: block;
+                    text-align: center;
+                    margin: 5px auto;
+                    font-size: 12px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        } 
+
+        &__text {
+            grid-area: text;
+            width: 90%;
+        }
+    }
+}
+
+.wärme {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+    &::-webkit-scrollbar-thumb {
+        background: black;
+        border-radius: 10px;
+      }
+    &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+    & > div {
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        width: 99%;
+        margin-right: 50px;
+        transform-origin: center center;
+        transform: scale(1);
+        transition: transform 0.5s;
+        position: relative;
+
+        background-color: white;
+        border-radius: 10px;
+        border: 1px solid #8a8a85;
+    }
+
+    & > div:target {
+      /*   transform: scale(0.8); */
+      }
+
+    &__intro{
+        gap: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'header'
+            'tacho'
+            'text'
+            ;
+
+        &__header {
+            height: 40px;
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+            grid-area: header;
+            background-color: #919191;
+        }
+
+        &__tacho {
+            padding-top: 20px;
+            grid-area: tacho;
+            display: flex;
+
+            div {
+                margin: auto;
+            }
+
+            ul {
+                text-align: center;
+
+                li a {
+                    text-decoration: underline;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+
+            &__img {
+                display: block;
+                width: 80%; 
+                margin: 0 auto;
+
+                &__details {
+                    display: block;
+                    width: 80%;
+                    margin: 20px auto 5px auto;
+                }
+
+                &__link {
+                    display: block;
+                    text-align: center;
+                    margin: 5px auto;
+                    font-size: 12px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        } 
+
+        &__text {
+            grid-area: text;
+            width: 90%;
         }
     }
 }
@@ -538,16 +787,13 @@ h6 { font-size: 16px;}
     }
 
 
-    .slider {
-        width: 70%;
-    }
 
 
     .strom {
         &__intro{
-            gap: 30px 0;
             grid-template-columns: 65% 35%;
             grid-template-areas:
+                'header header'
                 'text tacho'
                 ;
 
@@ -562,14 +808,48 @@ h6 { font-size: 16px;}
         }
 
         &__bundesländer {
-
             &__map {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-    
-                ul {
-                    flex-direction: column;
-                }
+                width: 40%;
+            }
+        }
+    }
+
+    .verkehr {
+        &__intro{
+            gap: 30px 0;
+            grid-template-columns: 65% 35%;
+            grid-template-areas:
+                'header header'
+                'text tacho'
+                ;
+
+            &__text {
+                width: 80%;
+                margin: auto;
+            }
+
+            &__tacho {
+                display: block;
+            }
+        }
+    }
+
+    .wärme {
+        &__intro{
+            gap: 30px 0;
+            grid-template-columns: 65% 35%;
+            grid-template-areas:
+                'header header'
+                'text tacho'
+                ;
+
+            &__text {
+                width: 80%;
+                margin: auto;
+            }
+
+            &__tacho {
+                display: block;
             }
         }
     }
