@@ -246,8 +246,6 @@ h6 {
   width: 80%;
   overflow: hidden;
   margin: 40px auto;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: header;
 }
 
@@ -261,8 +259,6 @@ h6 {
   height: 70px;
   width: 100%;
   border-radius: 8px 8px 0 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: header;
   background-color: #919191;
 }
@@ -392,7 +388,7 @@ h6 {
 
 .strom__intro__tacho {
   padding-top: 10px;
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: tacho;
   display: -webkit-box;
@@ -440,7 +436,7 @@ h6 {
 }
 
 .strom__intro__text {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: text;
   width: 90%;
@@ -526,11 +522,11 @@ h6 {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-      grid-template-areas: 'header' 'tacho' 'text';
+      grid-template-areas: 'tacho' 'text';
 }
 
 .verkehr__intro__tacho {
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: tacho;
   display: -webkit-box;
@@ -578,7 +574,7 @@ h6 {
 }
 
 .verkehr__intro__text {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: text;
   width: 90%;
@@ -639,22 +635,20 @@ h6 {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-      grid-template-areas: 'header' 'tacho' 'text';
+      grid-template-areas: 'tacho' 'text';
 }
 
 .wärme__intro__header {
   height: 40px;
   width: 100%;
   border-radius: 8px 8px 0 0;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: header;
   background-color: #919191;
 }
 
 .wärme__intro__tacho {
   padding-top: 20px;
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: tacho;
   display: -webkit-box;
@@ -702,7 +696,7 @@ h6 {
 }
 
 .wärme__intro__text {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: text;
   width: 90%;
@@ -922,7 +916,7 @@ h6 {
   .strom__intro {
     -ms-grid-columns: 65% 35%;
         grid-template-columns: 65% 35%;
-        grid-template-areas: 'header header' 'text tacho';
+        grid-template-areas: 'text tacho';
   }
   .strom__intro__text {
     width: 80%;
@@ -938,7 +932,7 @@ h6 {
     gap: 30px 0;
     -ms-grid-columns: 65% 35%;
         grid-template-columns: 65% 35%;
-        grid-template-areas: 'header header' 'text tacho';
+        grid-template-areas: 'text tacho';
   }
   .verkehr__intro__text {
     width: 80%;
@@ -951,7 +945,7 @@ h6 {
     gap: 30px 0;
     -ms-grid-columns: 65% 35%;
         grid-template-columns: 65% 35%;
-        grid-template-areas: 'header header' 'text tacho';
+        grid-template-areas: 'text tacho';
   }
   .wärme__intro__text {
     width: 80%;

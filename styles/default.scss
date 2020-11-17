@@ -445,7 +445,6 @@ h6 { font-size: 16px;}
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
-            'header'
             'tacho'
             'text'
             ;
@@ -545,7 +544,6 @@ h6 { font-size: 16px;}
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
-            'header'
             'tacho'
             'text'
             ;
@@ -794,7 +792,6 @@ h6 { font-size: 16px;}
         &__intro{
             grid-template-columns: 65% 35%;
             grid-template-areas:
-                'header header'
                 'text tacho'
                 ;
 
@@ -820,7 +817,6 @@ h6 { font-size: 16px;}
             gap: 30px 0;
             grid-template-columns: 65% 35%;
             grid-template-areas:
-                'header header'
                 'text tacho'
                 ;
 
@@ -840,7 +836,6 @@ h6 { font-size: 16px;}
             gap: 30px 0;
             grid-template-columns: 65% 35%;
             grid-template-areas:
-                'header header'
                 'text tacho'
                 ;
 
