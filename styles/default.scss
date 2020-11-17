@@ -198,6 +198,10 @@ h6 { font-size: 16px;}
     &__img {
         width: 100%;
         margin: 20px 0;
+
+        &--background {
+            position: absolute;
+        }
     }
 }
 
@@ -206,6 +210,10 @@ h6 { font-size: 16px;}
     overflow: hidden;
     margin: 40px auto;
     grid-area: header;
+
+    &--background {
+        margin-top: 30%;
+    }
 
     &__header {
         display: flex;
