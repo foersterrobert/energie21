@@ -228,6 +228,7 @@ h6 {
 }
 
 .intro__info__card h4 {
+  padding-bottom: 2%;
   font-family: 'Roboto', sans-serif;
   color: black;
 }

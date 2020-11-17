@@ -2,7 +2,7 @@ jQuery(".intro__text").fitText(2.4);
 
 jQuery(".intro__text--2").fitText(3);
 
-jQuery(".intro__info__card h4").fitText(1.5);
+jQuery(".intro__info__card h4").fitText(1.3);
 
 jQuery(".intro__title").fitText(2.5);
 
