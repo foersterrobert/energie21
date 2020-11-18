@@ -247,14 +247,14 @@ h6 {
 }
 
 .slider {
-  width: 80%;
+  width: 90%;
   overflow: hidden;
   margin: 40px auto;
   grid-area: header;
 }
 
 .slider--background {
-  margin-top: 30%;
+  margin-top: 28%;
 }
 
 .slider__header {
@@ -873,7 +873,6 @@ h6 {
 .energien__quelle__text__content {
   width: 90%;
   margin: auto;
-  padding-top: 10px;
   display: none;
 }
 
@@ -881,15 +880,20 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .energien__quelle__text__content__wrapper__heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.energien__quelle__text__content__wrapper ul {
+  padding-top: 20px;
 }
 
 .rotate {
@@ -954,6 +958,15 @@ h6 {
   .intro__info {
     width: 85%;
   }
+  .slider {
+    width: 80%;
+  }
+  .slider--small {
+    width: 60%;
+  }
+  .slider--background {
+    margin-top: 25%;
+  }
   .strom__intro {
     -ms-grid-columns: 65% 35%;
         grid-template-columns: 65% 35%;
@@ -994,6 +1007,33 @@ h6 {
   }
   .wärme__intro__tacho {
     display: block;
+  }
+  .energien__quelle__text__content__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .energien__quelle__text__content__wrapper__heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .energien__quelle__text__content__wrapper {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .energien__quelle__text__content__wrapper__heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=default.css.map */
