@@ -1041,6 +1041,9 @@ h6 {
 }
 
 @media screen and (min-width: 1200px) {
+  .slider--small {
+    width: 50%;
+  }
   .energien__quelle__text__content__wrapper {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
