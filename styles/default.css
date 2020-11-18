@@ -376,6 +376,7 @@ h6 {
 }
 
 .strom > div {
+  padding-bottom: 40px;
   scroll-snap-align: start;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -515,6 +516,7 @@ h6 {
 }
 
 .verkehr > div {
+  padding-bottom: 40px;
   scroll-snap-align: start;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -627,6 +629,7 @@ h6 {
 }
 
 .wärme > div {
+  padding-bottom: 40px;
   scroll-snap-align: start;
   -ms-flex-negative: 0;
       flex-shrink: 0;
