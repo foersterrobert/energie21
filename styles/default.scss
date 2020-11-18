@@ -408,24 +408,32 @@ h6 { font-size: 16px;}
     &__bundesländer {
         &__grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             grid-template-areas: 
-            'strom__bundesländer__title strom__bundesländer__title'
-            'strom__bundesländer__list strom__bundesländer__map'
+            'strom__bundesländer__title'
+            'strom__bundesländer__map'
+            'strom__bundesländer__list'
             ;
         }
 
         &__title {
+            width: 90%;
+            margin: auto;
             text-align: center;
             grid-area: strom__bundesländer__title;
         }
 
-        ul {
+        &__list {
+            display: flex;
             grid-area: strom__bundesländer__list;
             margin: auto;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
         &__map {
             grid-area: strom__bundesländer__map;
+            width: 90%;
+            margin: auto;
 
             &__path {
                 fill: #176e1ee3;
@@ -913,8 +921,37 @@ h6 { font-size: 16px;}
         }
 
         &__bundesländer {
+            &__grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                'strom__bundesländer__title strom__bundesländer__title'
+                'strom__bundesländer__list strom__bundesländer__map'
+                ;
+            }
+    
+            &__title {
+                width: 90%;
+                text-align: center;
+                grid-area: strom__bundesländer__title;
+            }
+    
+            &__list {
+                grid-area: strom__bundesländer__list;
+                margin: auto;
+                flex-direction: column;
+                flex-wrap: nowrap;
+            }
+
             &__map {
-                width: 80%;
+                grid-area: strom__bundesländer__map;
+    
+                &__path {
+                }
+    
+                svg {
+                    margin: auto;
+                }
             }
         }
     }
