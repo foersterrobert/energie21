@@ -290,6 +290,23 @@ h6 {
   color: white;
 }
 
+.slider__header__link {
+  color: #158EFF;
+  font-size: calc(min(max(10px, 3vw), 18px));
+}
+
+.slider__header__link:hover {
+  color: #3d9ffa;
+}
+
+.slider__header__link--clicked {
+  color: #e3e3e7;
+}
+
+.slider__header__link--clicked:hover {
+  color: white;
+}
+
 .slider__header ul {
   margin-right: 5px;
   display: -webkit-box;
@@ -299,15 +316,6 @@ h6 {
 
 .slider__header ul li {
   margin: auto 5px;
-}
-
-.slider__header ul li a {
-  color: white;
-  font-size: calc(min(max(10px, 3vw), 18px));
-}
-
-.slider__header ul li a:hover {
-  text-decoration: underline;
 }
 
 .slider > a {
@@ -346,10 +354,6 @@ h6 {
       scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  -ms-scroll-snap-points-x: repeat(300px);
-      scroll-snap-points-x: repeat(300px);
-  -ms-scroll-snap-type: mandatory;
-      scroll-snap-type: mandatory;
 }
 
 .strom::-webkit-scrollbar {
@@ -464,7 +468,7 @@ h6 {
 }
 
 .strom__bundesländer__map svg {
-  width: 90%;
+  width: 70%;
   margin: auto;
 }
 
