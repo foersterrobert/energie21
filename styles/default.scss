@@ -353,21 +353,6 @@ h6 { font-size: 16px;}
             grid-area: tacho;
             display: flex;
 
-            div {
-                margin: auto;
-            }
-
-            ul {
-                text-align: center;
-
-                li a {
-                    text-decoration: underline;
-
-                    &:hover {
-                        opacity: 0.8;
-                    }
-                }
-            }
 
             &__img {
                 display: block;
@@ -377,7 +362,24 @@ h6 { font-size: 16px;}
                 &__details {
                     display: block;
                     width: 80%;
-                    margin: 20px auto 5px auto;
+                    margin: 20px 10px 5px 10px;
+
+                    li {
+                        font-size: calc(min(max(1.3vw), 25px));
+                        margin-top: 5px;
+
+                        a {
+                            display: flex;
+                            align-items: center;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                            img {
+                                height: calc(min(max(10px, 1.7vw), 25px));
+                            }
+                        }
+                    }
                 }
 
                 &__link {
@@ -909,7 +911,7 @@ h6 { font-size: 16px;}
 
     .strom {
         &__intro{
-            grid-template-columns: 65% 35%;
+            grid-template-columns: 60% 40%;
             grid-template-areas:
                 'text tacho'
                 ;

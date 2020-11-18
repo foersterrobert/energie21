@@ -8,6 +8,7 @@ jQuery(".intro__info__card h4").fitText(1.3);
 
 jQuery(".intro__title").fitText(2.5);
 
+
 $('.navigation__toggle').click(function() {
     $('.navigation__nav').toggleClass('navigation__nav--open', 500);
     $('.navigation__nav').slideToggle();

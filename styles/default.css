@@ -418,22 +418,6 @@ h6 {
   display: flex;
 }
 
-.strom__intro__tacho div {
-  margin: auto;
-}
-
-.strom__intro__tacho ul {
-  text-align: center;
-}
-
-.strom__intro__tacho ul li a {
-  text-decoration: underline;
-}
-
-.strom__intro__tacho ul li a:hover {
-  opacity: 0.8;
-}
-
 .strom__intro__tacho__img {
   display: block;
   width: 80%;
@@ -443,7 +427,29 @@ h6 {
 .strom__intro__tacho__img__details {
   display: block;
   width: 80%;
-  margin: 20px auto 5px auto;
+  margin: 20px 10px 5px 10px;
+}
+
+.strom__intro__tacho__img__details li {
+  font-size: calc(min(max(1.3vw), 25px));
+  margin-top: 5px;
+}
+
+.strom__intro__tacho__img__details li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.strom__intro__tacho__img__details li a:hover {
+  text-decoration: underline;
+}
+
+.strom__intro__tacho__img__details li a img {
+  height: calc(min(max(10px, 1.7vw), 25px));
 }
 
 .strom__intro__tacho__img__link {
@@ -1044,8 +1050,8 @@ h6 {
     margin-top: 25%;
   }
   .strom__intro {
-    -ms-grid-columns: 65% 35%;
-        grid-template-columns: 65% 35%;
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
         grid-template-areas: 'text tacho';
   }
   .strom__intro__text {
