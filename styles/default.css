@@ -505,12 +505,29 @@ h6 {
   transition: fill 0.3s;
 }
 
-.strom__bundesländer__map__path--Hamburg {
-  fill: #158EFF;
+.strom__bundesländer__map__path--Mecklenburg-Vorpommern, .strom__bundesländer__map__path--Schleswig-Holstein, .strom__bundesländer__map__path--Thüringen {
+  fill: #48b30a;
+}
+
+.strom__bundesländer__map__path--Bayern, .strom__bundesländer__map__path--Hessen, .strom__bundesländer__map__path--Niedersachsen, .strom__bundesländer__map__path--Rheinland-Pfalz, .strom__bundesländer__map__path--Sachsen-Anhalt {
+  fill: #44b853;
+}
+
+.strom__bundesländer__map__path--Baden-Württemberg, .strom__bundesländer__map__path--Saarland, .strom__bundesländer__map__path--Brandenburg {
+  fill: #a6dd4c;
+}
+
+.strom__bundesländer__map__path--Bremen, .strom__bundesländer__map__path--Nordrhein-Westfalen, .strom__bundesländer__map__path--Sachsen {
+  fill: #bbbb39;
+}
+
+.strom__bundesländer__map__path--Hamburg, .strom__bundesländer__map__path--Berlin {
+  fill: #968538;
 }
 
 .strom__bundesländer__map__path:hover {
   opacity: 0.9;
+  cursor: pointer;
 }
 
 .strom__bundesländer__map svg {

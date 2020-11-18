@@ -433,12 +433,29 @@ h6 { font-size: 16px;}
                 stroke-width: 4px;
                 transition: fill 0.3s;
 
-                &--Hamburg {
-                    fill: #158EFF;
+                &--Mecklenburg-Vorpommern, &--Schleswig-Holstein, &--Thüringen {
+                    fill: rgb(72, 179, 10);
+                }
+
+                &--Bayern, &--Hessen, &--Niedersachsen, &--Rheinland-Pfalz, &--Sachsen-Anhalt {
+                    fill: #44b853;
+                }
+
+                &--Baden-Württemberg, &--Saarland, &--Brandenburg {
+                    fill: #a6dd4c;
+                }
+
+                &--Bremen, &--Nordrhein-Westfalen, &--Sachsen {
+                    fill: rgb(187, 187, 57);
+                }
+
+                &--Hamburg, &--Berlin {
+                    fill: #968538;
                 }
 
                 &:hover {
                     opacity: 0.9;
+                    cursor: pointer;
                 }
             }
 
