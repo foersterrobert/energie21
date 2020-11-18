@@ -262,6 +262,10 @@ h6 {
   margin-top: 30%;
 }
 
+.slider--small {
+  margin: 150px auto 20px auto;
+}
+
 .slider__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,14 +294,14 @@ h6 {
 }
 
 .slider__header__info__title {
-  font-size: calc(min(max(14px, 3.5vw), 24px));
+  font-size: calc(min(max(16px, 3.5vw), 24px));
   margin: auto 0;
   color: white;
 }
 
 .slider__header__link {
   color: #e3e3e7;
-  font-size: calc(min(max(10px, 3vw), 18px));
+  font-size: calc(min(max(14px, 3vw), 24px));
 }
 
 .slider__header__link:hover {
@@ -483,6 +487,8 @@ h6 {
 }
 
 .strom__bundesländer__title {
+  font-size: calc(2.3vw);
+  padding-bottom: 20px;
   width: 90%;
   margin: auto;
   text-align: center;
@@ -492,6 +498,7 @@ h6 {
 }
 
 .strom__bundesländer__list {
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -511,7 +518,7 @@ h6 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: strom__bundesländer__map;
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
 
