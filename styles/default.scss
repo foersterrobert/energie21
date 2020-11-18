@@ -351,21 +351,22 @@ h6 { font-size: 16px;}
         &__tacho {
             padding-top: 10px;
             grid-area: tacho;
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
 
 
             &__img {
                 display: block;
-                width: 80%; 
-                margin: 0 auto;
+                width: 80%;
+                margin: auto; 
 
                 &__details {
                     display: block;
                     width: 80%;
-                    margin: 20px 10px 5px 10px;
+                    margin: 20px 0 5px 10px;
 
                     li {
-                        font-size: calc(min(max(1.3vw), 25px));
+                        font-size: calc(min(max(2vw), 25px));
                         margin-top: 5px;
 
                         a {
@@ -923,6 +924,35 @@ h6 { font-size: 16px;}
 
             &__tacho {
                 display: block;
+
+                &__img {
+                    display: block;
+                    width: 80%; 
+                    margin: 0 auto;
+    
+                    &__details {
+                        display: block;
+                        width: 80%;
+                        margin: 20px 10px 5px 10px;
+    
+                        li {
+                            font-size: calc(min(max(1.35vw), 25px));
+                            margin-top: 5px;
+    
+                            a {
+                                display: flex;
+                                align-items: center;
+    
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                                img {
+                                    height: calc(min(max(10px, 1.7vw), 25px));
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
 
