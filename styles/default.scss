@@ -208,11 +208,11 @@ h6 { font-size: 16px;}
 .slider {
     width: 90%;
     overflow: hidden;
-    margin: 40px auto;
+    margin: 80px auto 20px auto;
     grid-area: header;
 
     &--background {
-        margin-top: 28%;
+        margin-top: 30%;
     }
 
     &--small {
@@ -245,18 +245,18 @@ h6 { font-size: 16px;}
         }
 
         &__link {
-            color: $lightBlue;
+            color: rgb(227, 227, 231);
             font-size: calc(min(max(10px, 3vw), 18px));
 
             &:hover {
-                color: #3d9ffa;
+                color: white;
             }
             
             &--clicked {
-                color: rgb(227, 227, 231);
+                color: #3d3d3d;
 
                 &:hover {
-                    color: white;
+                    color: #535353;
                 }
             }
         }
