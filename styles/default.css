@@ -968,10 +968,6 @@ h6 {
   padding-top: 20px;
 }
 
-.scroll-card {
-  scroll-margin-top: 80px;
-}
-
 .rotate {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
