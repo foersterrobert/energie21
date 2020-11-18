@@ -406,23 +406,44 @@ h6 { font-size: 16px;}
     }
 
     &__bundesländer {
-        &__map {
-            grid-template-columns: 1fr;
+        &__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            'strom__bundesländer__title strom__bundesländer__title'
+            'strom__bundesländer__list strom__bundesländer__map'
+            ;
+        }
 
-            svg {
-                width: 70%;
-                margin: auto;
-            }
-    
-            path {
+        &__title {
+            text-align: center;
+            grid-area: strom__bundesländer__title;
+        }
+
+        ul {
+            grid-area: strom__bundesländer__list;
+            margin: auto;
+        }
+        &__map {
+            grid-area: strom__bundesländer__map;
+
+            &__path {
                 fill: #176e1ee3;
                 stroke: #8a8a85;
                 stroke-width: 4px;
                 transition: fill 0.3s;
+
+                &--Hamburg {
+                    fill: #158EFF;
+                }
+
+                &:hover {
+                    opacity: 0.9;
+                }
             }
-    
-            & :hover {
-                fill: #457949e3;
+
+            svg {
+                margin: auto;
             }
         }
     }
@@ -876,7 +897,7 @@ h6 { font-size: 16px;}
 
         &__bundesländer {
             &__map {
-                width: 40%;
+                width: 80%;
             }
         }
     }
@@ -938,7 +959,7 @@ h6 { font-size: 16px;}
 }
 
 @media screen and (min-width: 1200px){
-    
+
     .slider {
         &--small {
             width: 50%;

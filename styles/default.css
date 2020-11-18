@@ -468,17 +468,36 @@ h6 {
   width: 90%;
 }
 
-.strom__bundesländer__map {
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+.strom__bundesländer__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 'strom__bundesländer__title strom__bundesländer__title' 'strom__bundesländer__list strom__bundesländer__map';
 }
 
-.strom__bundesländer__map svg {
-  width: 70%;
+.strom__bundesländer__title {
+  text-align: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: strom__bundesländer__title;
+}
+
+.strom__bundesländer ul {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: strom__bundesländer__list;
   margin: auto;
 }
 
-.strom__bundesländer__map path {
+.strom__bundesländer__map {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: strom__bundesländer__map;
+}
+
+.strom__bundesländer__map__path {
   fill: #176e1ee3;
   stroke: #8a8a85;
   stroke-width: 4px;
@@ -486,8 +505,16 @@ h6 {
   transition: fill 0.3s;
 }
 
-.strom__bundesländer__map :hover {
-  fill: #457949e3;
+.strom__bundesländer__map__path--Hamburg {
+  fill: #158EFF;
+}
+
+.strom__bundesländer__map__path:hover {
+  opacity: 0.9;
+}
+
+.strom__bundesländer__map svg {
+  margin: auto;
 }
 
 .verkehr {
@@ -996,7 +1023,7 @@ h6 {
     display: block;
   }
   .strom__bundesländer__map {
-    width: 40%;
+    width: 80%;
   }
   .verkehr__intro {
     gap: 30px 0;
