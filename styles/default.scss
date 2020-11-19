@@ -13,7 +13,6 @@ body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
     animation: gradient 12s ease infinite;
-
 }
 
 @keyframes gradient {
@@ -749,8 +748,25 @@ h6 { font-size: 16px;}
         }
 
         &__title {
+            display: flex;
             grid-area: quelle__title;
-            text-align: center;
+            justify-content: space-between;
+
+            h3 {
+                margin-left: 5%;
+            }
+
+            &__images {
+                height: 30px;
+                margin-right: 5%;
+
+                a {
+                    img {
+                        margin: 2px;
+                        height: 100%;
+                    }
+                }
+            }
         }
 
         &__image {
