@@ -233,6 +233,36 @@ h6 {
   color: black;
 }
 
+.intro__summary {
+  margin: 40px auto 5% auto;
+}
+
+.intro__summary__title {
+  text-align: center;
+  font-size: 5vw;
+}
+
+.intro__summary__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro__summary__list li {
+  font-size: 3.5vw;
+  margin: 5px;
+  color: black;
+}
+
+.intro__summary img {
+  margin: 1% auto auto auto;
+  width: 60%;
+  display: block;
+}
+
 .intro__text {
   margin: 20px 10%;
 }
@@ -1137,6 +1167,15 @@ h6 {
   }
   .intro__info {
     width: 85%;
+  }
+  .intro__summary__title {
+    font-size: 4vw;
+  }
+  .intro__summary__list li {
+    font-size: 3vw;
+  }
+  .intro__summary img {
+    width: 40%;
   }
   .slider {
     width: 70%;
