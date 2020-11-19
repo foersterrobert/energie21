@@ -1026,6 +1026,68 @@ h6 {
   background-color: #FC6058;
 }
 
+.kontakt {
+  margin: 120px auto 60px auto;
+}
+
+.kontakt__form {
+  width: 60%;
+  margin: auto;
+  background-color: #eef4f8;
+  border: 1px solid #5C5B5B;
+  border-radius: 10px;
+  padding: 10px 20px;
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+}
+
+.kontakt__form p {
+  margin: 20px 0;
+}
+
+.kontakt__form p :focus {
+  outline: 0;
+}
+
+.kontakt__form p label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #3d3d3d;
+}
+
+.kontakt__form p label input {
+  width: 50%;
+  max-width: 120px;
+  padding: 3px;
+  margin-left: 10px;
+}
+
+.kontakt__form p textarea {
+  border-radius: 5px;
+  width: 80%;
+  resize: none;
+  margin: auto;
+  display: block;
+  height: calc(min(max(200px, 20vw), 500px));
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.kontakt__form p button {
+  padding: 5px 10px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+}
+
 .footer {
   padding: 20px 0;
   display: -webkit-box;
