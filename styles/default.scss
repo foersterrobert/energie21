@@ -469,6 +469,10 @@ h6 { font-size: 16px;}
 
                 &--Hamburg, &--Berlin {
                     fill: #968538;
+
+                    &:hover ~ .strom__bundesländer__list {
+                        background-color: green;
+                    }
                 }
 
                 &:hover {
@@ -761,7 +765,9 @@ h6 { font-size: 16px;}
             }
 
             &__images {
-                height: 30px;
+                height: 4vw;
+                max-height: 60px;
+                min-height: 40px;
                 margin-right: 5%;
 
                 a {

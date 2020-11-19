@@ -554,6 +554,10 @@ h6 {
   fill: #968538;
 }
 
+.strom__bundesländer__map__path--Hamburg:hover ~ .strom__bundesländer__list, .strom__bundesländer__map__path--Berlin:hover ~ .strom__bundesländer__list {
+  background-color: green;
+}
+
 .strom__bundesländer__map__path:hover {
   opacity: 0.9;
   cursor: pointer;
@@ -881,7 +885,9 @@ h6 {
 }
 
 .energien__quelle__title__images {
-  height: 30px;
+  height: 4vw;
+  max-height: 60px;
+  min-height: 40px;
   margin-right: 5%;
 }
 
