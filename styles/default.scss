@@ -362,12 +362,12 @@ h6 { font-size: 16px;}
 
                 &__details {
                     display: block;
-                    width: 80%;
-                    margin: 20px 0 5px 10px;
+                    width: 95%;
+                    margin: auto 0;
 
                     li {
-                        font-size: calc(min(max(2vw), 25px));
-                        margin-top: 5px;
+                        font-size: calc(2.3vw);
+                        margin-top: 8px;
 
                         a {
                             display: flex;
@@ -377,7 +377,7 @@ h6 { font-size: 16px;}
                                 text-decoration: underline;
                             }
                             img {
-                                height: calc(min(max(10px, 1.7vw), 25px));
+                                height: calc(1.8vw);
                             }
                         }
                     }
@@ -387,7 +387,7 @@ h6 { font-size: 16px;}
                     display: block;
                     text-align: center;
                     margin: 5px auto;
-                    font-size: 12px;
+                    font-size: calc(2.8vw);
 
                     &:hover {
                         text-decoration: underline;
@@ -917,7 +917,7 @@ h6 { font-size: 16px;}
     }
 
     .slider {
-        width: 80%;
+        width: 70%;
         
         &--small {
             width: 80%;
@@ -932,7 +932,7 @@ h6 { font-size: 16px;}
 
     .strom {
         &__intro{
-            grid-template-columns: 60% 40%;
+            grid-template-columns: 55% 45%;
             grid-template-areas:
                 'text tacho'
                 ;
@@ -947,16 +947,21 @@ h6 { font-size: 16px;}
 
                 &__img {
                     display: block;
-                    width: 80%; 
+                    width: 90%; 
                     margin: 0 auto;
+
+                    &__link {
+                        font-size: calc(1.6vw);
+                    }
     
                     &__details {
+                        padding-top: 10px;
                         display: block;
                         width: 80%;
-                        margin: 20px 10px 5px 10px;
+                        margin: auto;
     
                         li {
-                            font-size: calc(min(max(1.35vw), 25px));
+                            font-size: calc(1.5vw);
                             margin-top: 5px;
     
                             a {
@@ -967,7 +972,7 @@ h6 { font-size: 16px;}
                                     text-decoration: underline;
                                 }
                                 img {
-                                    height: calc(min(max(10px, 1.7vw), 25px));
+                                    height: calc(1.3vw);
                                 }
                             }
                         }

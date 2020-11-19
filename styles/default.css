@@ -430,13 +430,13 @@ h6 {
 
 .strom__intro__tacho__img__details {
   display: block;
-  width: 80%;
-  margin: 20px 0 5px 10px;
+  width: 95%;
+  margin: auto 0;
 }
 
 .strom__intro__tacho__img__details li {
-  font-size: calc(min(max(2vw), 25px));
-  margin-top: 5px;
+  font-size: calc(2.3vw);
+  margin-top: 8px;
 }
 
 .strom__intro__tacho__img__details li a {
@@ -453,14 +453,14 @@ h6 {
 }
 
 .strom__intro__tacho__img__details li a img {
-  height: calc(min(max(10px, 1.7vw), 25px));
+  height: calc(1.8vw);
 }
 
 .strom__intro__tacho__img__link {
   display: block;
   text-align: center;
   margin: 5px auto;
-  font-size: 12px;
+  font-size: calc(2.8vw);
 }
 
 .strom__intro__tacho__img__link:hover {
@@ -1067,7 +1067,7 @@ h6 {
     width: 85%;
   }
   .slider {
-    width: 80%;
+    width: 70%;
   }
   .slider--small {
     width: 80%;
@@ -1076,8 +1076,8 @@ h6 {
     margin-top: 25%;
   }
   .strom__intro {
-    -ms-grid-columns: 60% 40%;
-        grid-template-columns: 60% 40%;
+    -ms-grid-columns: 55% 45%;
+        grid-template-columns: 55% 45%;
         grid-template-areas: 'text tacho';
   }
   .strom__intro__text {
@@ -1089,16 +1089,20 @@ h6 {
   }
   .strom__intro__tacho__img {
     display: block;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
+  .strom__intro__tacho__img__link {
+    font-size: calc(1.6vw);
+  }
   .strom__intro__tacho__img__details {
+    padding-top: 10px;
     display: block;
     width: 80%;
-    margin: 20px 10px 5px 10px;
+    margin: auto;
   }
   .strom__intro__tacho__img__details li {
-    font-size: calc(min(max(1.35vw), 25px));
+    font-size: calc(1.5vw);
     margin-top: 5px;
   }
   .strom__intro__tacho__img__details li a {
@@ -1113,7 +1117,7 @@ h6 {
     text-decoration: underline;
   }
   .strom__intro__tacho__img__details li a img {
-    height: calc(min(max(10px, 1.7vw), 25px));
+    height: calc(1.3vw);
   }
   .strom__bundesländer__grid {
     display: -ms-grid;
