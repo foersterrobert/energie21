@@ -214,7 +214,6 @@ h6 { font-size: 16px;}
     width: 90%;
     overflow: hidden;
     margin: 80px auto 20px auto;
-    grid-area: header;
 
     &--background {
         margin-top: 30%;
@@ -244,7 +243,7 @@ h6 { font-size: 16px;}
             }
 
             &__title {
-                font-size: calc(min(max(16px, 3.5vw), 24px));
+                font-size: calc(min(max(20px, 3.5vw), 32px));
                 margin: auto 0;
                 color: white;
             }
@@ -252,7 +251,7 @@ h6 { font-size: 16px;}
 
         &__link {
             color: rgb(227, 227, 231);
-            font-size: calc(min(max(14px, 3vw), 24px));
+            font-size: calc(min(max(18px, 3vw), 22px));
 
             &:hover {
                 color: white;
@@ -320,7 +319,7 @@ h6 { font-size: 16px;}
       }
 
     & > div {
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         scroll-snap-align: start;
         flex-shrink: 0;
         width: 99%;
@@ -435,10 +434,15 @@ h6 { font-size: 16px;}
             margin: auto;
             flex-direction: row;
             flex-wrap: wrap;
+
+            li {
+                font-size: calc(2.8vw);
+                margin: 5px;
+            }
         }
         &__map {
             grid-area: strom__bundesländer__map;
-            width: 80%;
+            width: 70%;
             margin: auto;
 
             &__path {
@@ -878,7 +882,7 @@ h6 { font-size: 16px;}
     margin: 120px auto 60px auto;
 
     &__form {
-        width: 60%;
+        width: 80%;
         margin: auto;
         background-color: rgb(238, 244, 248);
         border: 1px solid #5C5B5B;
@@ -903,7 +907,7 @@ h6 { font-size: 16px;}
 
                 input {
                     width: 50%;
-                    max-width: 120px;
+                    max-width: 140px;
                     padding: 3px;
                     margin-left: 10px;
                 }
@@ -1054,6 +1058,7 @@ h6 { font-size: 16px;}
             }
     
             &__title {
+                font-size: calc(2vw);
                 width: 90%;
                 text-align: center;
                 grid-area: strom__bundesländer__title;
@@ -1064,10 +1069,16 @@ h6 { font-size: 16px;}
                 margin: auto;
                 flex-direction: column;
                 flex-wrap: nowrap;
+
+                li {
+                    font-size: calc(1.5vw);
+                    margin: 3px;
+                }
             }
 
             &__map {
-                grid-area: strom__bundesländer__map;
+
+                width: 90%;
     
                 &__path {
                 }
@@ -1132,6 +1143,10 @@ h6 { font-size: 16px;}
                 }
             }
         }
+    }
+
+    .kontakt {
+        width: 70%;
     }
 }
 
