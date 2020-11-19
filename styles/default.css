@@ -475,10 +475,12 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: black;
+  text-decoration: underline;
 }
 
 .strom__intro__tacho__img__details li a:hover {
-  text-decoration: underline;
+  color: unset;
 }
 
 .strom__intro__tacho__img__details li a img {
@@ -546,6 +548,7 @@ h6 {
 .strom__bundesländer__list li {
   font-size: calc(2.8vw);
   margin: 5px;
+  color: black;
 }
 
 .strom__bundesländer__map {
