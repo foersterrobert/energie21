@@ -1175,6 +1175,7 @@ h6 {
     font-size: 4vw;
   }
   .intro__summary__list li {
+    margin: 4px 2%;
     font-size: 3vw;
   }
   .intro__summary img {
