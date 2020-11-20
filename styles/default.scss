@@ -442,6 +442,10 @@ h6 { font-size: 16px;}
             font-size: 2.7vw;
             text-align: center;
             grid-area: graph__title;
+
+            &--small {
+                font-size: 2.5vw;
+            }
         }
 
         &__details {
@@ -943,6 +947,10 @@ h6 { font-size: 16px;}
                 font-size: 2.2vw;
                 text-align: center;
                 grid-area: graph__title;
+
+                &--small {
+                    font-size: 2vw;
+                }
             }
 
             &__details {
