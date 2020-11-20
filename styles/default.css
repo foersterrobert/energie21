@@ -383,7 +383,7 @@ h6 {
   background: #000;
 }
 
-.strom {
+.sektor {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,21 +394,21 @@ h6 {
   -webkit-overflow-scrolling: touch;
 }
 
-.strom::-webkit-scrollbar {
+.sektor::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
 
-.strom::-webkit-scrollbar-thumb {
+.sektor::-webkit-scrollbar-thumb {
   background: black;
   border-radius: 10px;
 }
 
-.strom::-webkit-scrollbar-track {
+.sektor::-webkit-scrollbar-track {
   background: transparent;
 }
 
-.strom > div {
+.sektor > div {
   padding-bottom: 20px;
   scroll-snap-align: start;
   -ms-flex-negative: 0;
@@ -429,11 +429,11 @@ h6 {
   border: 1px solid #8a8a85;
 }
 
-.strom > div:target {
+.sektor > div:target {
   /*   transform: scale(0.8); */
 }
 
-.strom__intro {
+.sektor__intro {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -441,34 +441,35 @@ h6 {
       grid-template-areas: 'tacho' 'text';
 }
 
-.strom__intro__tacho {
+.sektor__intro__tacho {
   padding-top: 10px;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: tacho;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
 }
 
-.strom__intro__tacho__img {
+.sektor__intro__tacho__img {
   display: block;
   width: 80%;
   margin: auto;
 }
 
-.strom__intro__tacho__img__details {
+.sektor__intro__tacho__img__details {
   display: block;
   width: 95%;
   margin: auto 0;
 }
 
-.strom__intro__tacho__img__details li {
+.sektor__intro__tacho__img__details li {
   font-size: calc(2.3vw);
   margin-top: 8px;
 }
 
-.strom__intro__tacho__img__details li a {
+.sektor__intro__tacho__img__details li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -479,33 +480,33 @@ h6 {
   text-decoration: underline;
 }
 
-.strom__intro__tacho__img__details li a:hover {
+.sektor__intro__tacho__img__details li a:hover {
   color: unset;
 }
 
-.strom__intro__tacho__img__details li a img {
+.sektor__intro__tacho__img__details li a img {
   height: calc(1.8vw);
 }
 
-.strom__intro__tacho__img__link {
+.sektor__intro__tacho__img__link {
   display: block;
   text-align: center;
   margin: 5px auto;
   font-size: calc(2.8vw);
 }
 
-.strom__intro__tacho__img__link:hover {
+.sektor__intro__tacho__img__link:hover {
   text-decoration: underline;
 }
 
-.strom__intro__text {
+.sektor__intro__text {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: text;
   width: 90%;
 }
 
-.strom__graph {
+.sektor__graph {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -513,7 +514,7 @@ h6 {
       grid-template-areas: 'graph__title' 'graph__image' 'graph__details ';
 }
 
-.strom__graph__title {
+.sektor__graph__title {
   margin: 30px 0;
   font-size: 2.7vw;
   text-align: center;
@@ -522,7 +523,7 @@ h6 {
   grid-area: graph__title;
 }
 
-.strom__graph__details {
+.sektor__graph__details {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: graph__details;
@@ -540,12 +541,12 @@ h6 {
   margin: auto;
 }
 
-.strom__graph__details li {
+.sektor__graph__details li {
   font-size: calc(4vw);
   margin: 8px auto;
 }
 
-.strom__graph__details li a {
+.sektor__graph__details li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,15 +557,15 @@ h6 {
   text-decoration: underline;
 }
 
-.strom__graph__details li a:hover {
+.sektor__graph__details li a:hover {
   color: unset;
 }
 
-.strom__graph__details li a img {
+.sektor__graph__details li a img {
   height: calc(3.5vw);
 }
 
-.strom__graph__img {
+.sektor__graph__img {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: graph__image;
@@ -573,32 +574,32 @@ h6 {
   margin: auto;
 }
 
-.strom__bundesländer__grid {
+.sektor__bundesländer__grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-      grid-template-areas: 'strom__bundesländer__title' 'strom__bundesländer__map' 'strom__bundesländer__list';
+      grid-template-areas: 'sektor__bundesländer__title' 'sektor__bundesländer__map' 'sektor__bundesländer__list';
 }
 
-.strom__bundesländer__title {
+.sektor__bundesländer__title {
   font-size: calc(2.5vw);
   padding-bottom: 20px;
   margin: auto;
   text-align: center;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: strom__bundesländer__title;
+  grid-area: sektor__bundesländer__title;
 }
 
-.strom__bundesländer__list {
+.sektor__bundesländer__list {
   width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  grid-area: strom__bundesländer__list;
+  grid-area: sektor__bundesländer__list;
   margin: auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -608,21 +609,21 @@ h6 {
       flex-wrap: wrap;
 }
 
-.strom__bundesländer__list li {
+.sektor__bundesländer__list li {
   font-size: calc(2.8vw);
   margin: 5px;
   color: black;
 }
 
-.strom__bundesländer__map {
+.sektor__bundesländer__map {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-area: strom__bundesländer__map;
+  grid-area: sektor__bundesländer__map;
   width: 70%;
   margin: auto;
 }
 
-.strom__bundesländer__map__path {
+.sektor__bundesländer__map__path {
   fill: #176e1ee3;
   stroke: #8a8a85;
   stroke-width: 4px;
@@ -630,273 +631,37 @@ h6 {
   transition: fill 0.3s;
 }
 
-.strom__bundesländer__map__path--Mecklenburg-Vorpommern, .strom__bundesländer__map__path--Schleswig-Holstein, .strom__bundesländer__map__path--Thüringen {
+.sektor__bundesländer__map__path--Mecklenburg-Vorpommern, .sektor__bundesländer__map__path--Schleswig-Holstein, .sektor__bundesländer__map__path--Thüringen {
   fill: #48b30a;
 }
 
-.strom__bundesländer__map__path--Bayern, .strom__bundesländer__map__path--Hessen, .strom__bundesländer__map__path--Niedersachsen, .strom__bundesländer__map__path--Rheinland-Pfalz, .strom__bundesländer__map__path--Sachsen-Anhalt {
+.sektor__bundesländer__map__path--Bayern, .sektor__bundesländer__map__path--Hessen, .sektor__bundesländer__map__path--Niedersachsen, .sektor__bundesländer__map__path--Rheinland-Pfalz, .sektor__bundesländer__map__path--Sachsen-Anhalt {
   fill: #44b853;
 }
 
-.strom__bundesländer__map__path--Baden-Württemberg, .strom__bundesländer__map__path--Saarland, .strom__bundesländer__map__path--Brandenburg {
+.sektor__bundesländer__map__path--Baden-Württemberg, .sektor__bundesländer__map__path--Saarland, .sektor__bundesländer__map__path--Brandenburg {
   fill: #a6dd4c;
 }
 
-.strom__bundesländer__map__path--Bremen, .strom__bundesländer__map__path--Nordrhein-Westfalen, .strom__bundesländer__map__path--Sachsen {
+.sektor__bundesländer__map__path--Bremen, .sektor__bundesländer__map__path--Nordrhein-Westfalen, .sektor__bundesländer__map__path--Sachsen {
   fill: #bbbb39;
 }
 
-.strom__bundesländer__map__path--Hamburg, .strom__bundesländer__map__path--Berlin {
+.sektor__bundesländer__map__path--Hamburg, .sektor__bundesländer__map__path--Berlin {
   fill: #968538;
 }
 
-.strom__bundesländer__map__path--Hamburg:hover ~ .strom__bundesländer__list, .strom__bundesländer__map__path--Berlin:hover ~ .strom__bundesländer__list {
+.sektor__bundesländer__map__path--Hamburg:hover ~ .sektor__bundesländer__list, .sektor__bundesländer__map__path--Berlin:hover ~ .sektor__bundesländer__list {
   background-color: green;
 }
 
-.strom__bundesländer__map__path:hover {
+.sektor__bundesländer__map__path:hover {
   opacity: 0.9;
   cursor: pointer;
 }
 
-.strom__bundesländer__map svg {
+.sektor__bundesländer__map svg {
   margin: auto;
-}
-
-.verkehr {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow-x: auto;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-
-.verkehr::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-
-.verkehr::-webkit-scrollbar-thumb {
-  background: black;
-  border-radius: 10px;
-}
-
-.verkehr::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.verkehr > div {
-  padding-bottom: 40px;
-  scroll-snap-align: start;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  width: 99%;
-  margin-right: 50px;
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
-  position: relative;
-  background-color: white;
-  border-radius: 10px;
-  border: 1px solid #8a8a85;
-}
-
-.verkehr > div:target {
-  /*   transform: scale(0.8); */
-}
-
-.verkehr__intro {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-      grid-template-areas: 'tacho' 'text';
-}
-
-.verkehr__intro__tacho {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: tacho;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.verkehr__intro__tacho div {
-  margin: auto;
-}
-
-.verkehr__intro__tacho ul {
-  text-align: center;
-}
-
-.verkehr__intro__tacho ul li a {
-  text-decoration: underline;
-}
-
-.verkehr__intro__tacho ul li a:hover {
-  opacity: 0.8;
-}
-
-.verkehr__intro__tacho__img {
-  display: block;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.verkehr__intro__tacho__img__details {
-  display: block;
-  width: 80%;
-  margin: 20px auto 5px auto;
-}
-
-.verkehr__intro__tacho__img__link {
-  display: block;
-  text-align: center;
-  margin: 5px auto;
-  font-size: 12px;
-}
-
-.verkehr__intro__tacho__img__link:hover {
-  text-decoration: underline;
-}
-
-.verkehr__intro__text {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: text;
-  width: 90%;
-}
-
-.wärme {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow-x: auto;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-
-.wärme::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-
-.wärme::-webkit-scrollbar-thumb {
-  background: black;
-  border-radius: 10px;
-}
-
-.wärme::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.wärme > div {
-  padding-bottom: 40px;
-  scroll-snap-align: start;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  width: 99%;
-  margin-right: 50px;
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
-  position: relative;
-  background-color: white;
-  border-radius: 10px;
-  border: 1px solid #8a8a85;
-}
-
-.wärme > div:target {
-  /*   transform: scale(0.8); */
-}
-
-.wärme__intro {
-  gap: 30px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-      grid-template-areas: 'tacho' 'text';
-}
-
-.wärme__intro__header {
-  height: 40px;
-  width: 100%;
-  border-radius: 8px 8px 0 0;
-  grid-area: header;
-  background-color: #919191;
-}
-
-.wärme__intro__tacho {
-  padding-top: 20px;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: tacho;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.wärme__intro__tacho div {
-  margin: auto;
-}
-
-.wärme__intro__tacho ul {
-  text-align: center;
-}
-
-.wärme__intro__tacho ul li a {
-  text-decoration: underline;
-}
-
-.wärme__intro__tacho ul li a:hover {
-  opacity: 0.8;
-}
-
-.wärme__intro__tacho__img {
-  display: block;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.wärme__intro__tacho__img__details {
-  display: block;
-  width: 80%;
-  margin: 20px auto 5px auto;
-}
-
-.wärme__intro__tacho__img__link {
-  display: block;
-  text-align: center;
-  margin: 5px auto;
-  font-size: 12px;
-}
-
-.wärme__intro__tacho__img__link:hover {
-  text-decoration: underline;
-}
-
-.wärme__intro__text {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: text;
-  width: 90%;
 }
 
 .energien {
@@ -1253,37 +1018,37 @@ h6 {
   .slider--background {
     margin-top: 25%;
   }
-  .strom__intro {
+  .sektor__intro {
     -ms-grid-columns: 55% 45%;
         grid-template-columns: 55% 45%;
         grid-template-areas: 'text tacho';
   }
-  .strom__intro__text {
+  .sektor__intro__text {
     width: 80%;
     margin: auto;
   }
-  .strom__intro__tacho {
+  .sektor__intro__tacho {
     display: block;
   }
-  .strom__intro__tacho__img {
+  .sektor__intro__tacho__img {
     display: block;
     width: 90%;
     margin: 0 auto;
   }
-  .strom__intro__tacho__img__link {
+  .sektor__intro__tacho__img__link {
     font-size: calc(1.6vw);
   }
-  .strom__intro__tacho__img__details {
+  .sektor__intro__tacho__img__details {
     padding-top: 10px;
     display: block;
     width: 80%;
     margin: auto;
   }
-  .strom__intro__tacho__img__details li {
+  .sektor__intro__tacho__img__details li {
     font-size: calc(1.5vw);
     margin-top: 5px;
   }
-  .strom__intro__tacho__img__details li a {
+  .sektor__intro__tacho__img__details li a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1291,13 +1056,13 @@ h6 {
         -ms-flex-align: center;
             align-items: center;
   }
-  .strom__intro__tacho__img__details li a:hover {
+  .sektor__intro__tacho__img__details li a:hover {
     text-decoration: underline;
   }
-  .strom__intro__tacho__img__details li a img {
+  .sektor__intro__tacho__img__details li a img {
     height: calc(1.3vw);
   }
-  .strom__graph__title {
+  .sektor__graph__title {
     margin: 30px 0;
     font-size: 2.2vw;
     text-align: center;
@@ -1305,7 +1070,7 @@ h6 {
     -ms-grid-column: 1;
     grid-area: graph__title;
   }
-  .strom__graph__details {
+  .sektor__graph__details {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: graph__details;
@@ -1322,11 +1087,11 @@ h6 {
     width: 99%;
     margin: auto;
   }
-  .strom__graph__details li {
+  .sektor__graph__details li {
     font-size: calc(1.2vw);
     margin: 8px auto;
   }
-  .strom__graph__details li a {
+  .sektor__graph__details li a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1336,13 +1101,13 @@ h6 {
     color: black;
     text-decoration: underline;
   }
-  .strom__graph__details li a:hover {
+  .sektor__graph__details li a:hover {
     color: unset;
   }
-  .strom__graph__details li a img {
+  .sektor__graph__details li a img {
     height: calc(1vw);
   }
-  .strom__graph__img {
+  .sektor__graph__img {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: graph__image;
@@ -1350,26 +1115,26 @@ h6 {
     display: block;
     margin: auto;
   }
-  .strom__bundesländer__grid {
+  .sektor__bundesländer__grid {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 'strom__bundesländer__title strom__bundesländer__title' 'strom__bundesländer__list strom__bundesländer__map';
+        grid-template-areas: 'sektor__bundesländer__title sektor__bundesländer__title' 'sektor__bundesländer__list sektor__bundesländer__map';
   }
-  .strom__bundesländer__title {
+  .sektor__bundesländer__title {
     font-size: calc(2vw);
     width: 90%;
     text-align: center;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
-    grid-area: strom__bundesländer__title;
+    grid-area: sektor__bundesländer__title;
   }
-  .strom__bundesländer__list {
+  .sektor__bundesländer__list {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
-    grid-area: strom__bundesländer__list;
+    grid-area: sektor__bundesländer__list;
     margin: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1378,41 +1143,15 @@ h6 {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
-  .strom__bundesländer__list li {
+  .sektor__bundesländer__list li {
     font-size: calc(1.5vw);
     margin: 3px;
   }
-  .strom__bundesländer__map {
+  .sektor__bundesländer__map {
     width: 90%;
   }
-  .strom__bundesländer__map svg {
+  .sektor__bundesländer__map svg {
     margin: auto;
-  }
-  .verkehr__intro {
-    gap: 30px 0;
-    -ms-grid-columns: 65% 35%;
-        grid-template-columns: 65% 35%;
-        grid-template-areas: 'text tacho';
-  }
-  .verkehr__intro__text {
-    width: 80%;
-    margin: auto;
-  }
-  .verkehr__intro__tacho {
-    display: block;
-  }
-  .wärme__intro {
-    gap: 30px 0;
-    -ms-grid-columns: 65% 35%;
-        grid-template-columns: 65% 35%;
-        grid-template-areas: 'text tacho';
-  }
-  .wärme__intro__text {
-    width: 80%;
-    margin: auto;
-  }
-  .wärme__intro__tacho {
-    display: block;
   }
   .energien__quelle__text__content__wrapper {
     -webkit-box-orient: horizontal;
