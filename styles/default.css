@@ -7,7 +7,7 @@ body {
   margin: 0;
   scroll-behavior: smooth;
   font-family: 'Roboto Slab', serif;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #ffffff, #bbc2c5, #6dafc7, #36a58b);
   background-size: 400% 400%;
   -webkit-animation: gradient 12s ease infinite;
           animation: gradient 12s ease infinite;
