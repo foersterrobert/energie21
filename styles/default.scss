@@ -360,9 +360,6 @@ h6 { font-size: 16px;}
         border: 1px solid #3d3d3d;
     }
 
-    & > div:target {
-      /*   transform: scale(0.8); */
-      }
 
     &__intro{
         display: grid;
@@ -496,9 +493,8 @@ h6 { font-size: 16px;}
         }
 
         &__title {
-            font-size: calc(2.5vw);
-            padding-bottom: 20px;
-            margin: auto;
+            font-size: calc(2.6vw);
+            margin: 10px 0;
             text-align: center;
             grid-area: sektor__bundesländer__title;
         }
@@ -512,8 +508,8 @@ h6 { font-size: 16px;}
             flex-wrap: wrap;
 
             li {
-                font-size: calc(2.8vw);
-                margin: 5px;
+                font-size: calc(2.6vw);
+                margin: 4px;
                 color: black;
             }
         }
@@ -524,7 +520,7 @@ h6 { font-size: 16px;}
 
             &__path {
                 fill: #176e1ee3;
-                stroke: #8a8a85;
+                stroke: #ffffff;
                 stroke-width: 4px;
                 transition: fill 0.3s;
 
@@ -600,10 +596,6 @@ h6 { font-size: 16px;}
         border-radius: 10px;
         border: 1px solid #3d3d3d;
     }
-
-    & > div:target {
-      /*   transform: scale(0.8); */
-      }
 
     &__quelle {
         display: grid;
@@ -943,7 +935,7 @@ h6 { font-size: 16px;}
 
         &__graph {
             &__title {
-                margin: 30px 0;
+                margin: 20px 0 10px 0;
                 font-size: 2.2vw;
                 text-align: center;
                 grid-area: graph__title;
@@ -983,7 +975,7 @@ h6 { font-size: 16px;}
     
             &__img {
                 grid-area: graph__image;
-                width: 90%;
+                width: 80%;
                 display: block;
                 margin: auto;
             }
@@ -1021,9 +1013,6 @@ h6 { font-size: 16px;}
             &__map {
 
                 width: 90%;
-    
-                &__path {
-                }
     
                 svg {
                     margin: auto;
