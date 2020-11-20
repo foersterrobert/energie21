@@ -505,8 +505,72 @@ h6 {
   width: 90%;
 }
 
-.strom__graph img {
+.strom__graph {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: 'graph__title' 'graph__image' 'graph__details ';
+}
+
+.strom__graph__title {
+  margin: 30px;
+  font-size: 2.6vw;
+  text-align: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: graph__title;
+}
+
+.strom__graph__details {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: graph__details;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 95%;
+  margin: auto;
+}
+
+.strom__graph__details li {
+  font-size: calc(4vw);
+  margin: 8px auto;
+}
+
+.strom__graph__details li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  text-decoration: underline;
+}
+
+.strom__graph__details li a:hover {
+  color: unset;
+}
+
+.strom__graph__details li a img {
+  height: calc(3.5vw);
+}
+
+.strom__graph__img {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: graph__image;
   width: 90%;
+  display: block;
+  margin: auto;
 }
 
 .strom__bundesländer__grid {
@@ -1233,6 +1297,59 @@ h6 {
   }
   .strom__intro__tacho__img__details li a img {
     height: calc(1.3vw);
+  }
+  .strom__graph__title {
+    margin: 30px 0;
+    font-size: 2.2vw;
+    text-align: center;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: graph__title;
+  }
+  .strom__graph__details {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: graph__details;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 99%;
+    margin: auto;
+  }
+  .strom__graph__details li {
+    font-size: calc(1.2vw);
+    margin: 8px auto;
+  }
+  .strom__graph__details li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: black;
+    text-decoration: underline;
+  }
+  .strom__graph__details li a:hover {
+    color: unset;
+  }
+  .strom__graph__details li a img {
+    height: calc(1vw);
+  }
+  .strom__graph__img {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: graph__image;
+    width: 90%;
+    display: block;
+    margin: auto;
   }
   .strom__bundesländer__grid {
     display: -ms-grid;
