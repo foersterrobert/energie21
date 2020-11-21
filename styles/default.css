@@ -1124,7 +1124,6 @@ h6 {
   }
   .sektor__bundesländer__title {
     font-size: calc(2vw);
-    width: 90%;
     text-align: center;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
