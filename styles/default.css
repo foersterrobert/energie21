@@ -892,6 +892,28 @@ h6 {
   background-color: #FC6058;
 }
 
+.karte {
+  background-color: white;
+  padding: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 10px auto 60px auto;
+  width: 80%;
+  border-radius: 10px;
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  border: 1px solid #3d3d3d;
+}
+
+.karte__intro {
+  text-align: center;
+  font-size: 3.5vw;
+}
+
+.karte__text {
+  font-size: 3vw;
+}
+
 .kontakt {
   margin: 120px auto 60px auto;
 }
@@ -1165,6 +1187,18 @@ h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .karte {
+    padding: 50px;
+    margin: 60px auto;
+    width: 60%;
+  }
+  .karte__intro {
+    text-align: center;
+    font-size: 2.4vw;
+  }
+  .karte__text {
+    font-size: 2.4vw;
   }
   .kontakt {
     width: 70%;

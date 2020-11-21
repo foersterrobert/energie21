@@ -745,6 +745,29 @@ h6 { font-size: 16px;}
 }
 
 
+.karte {
+    background-color: white;
+    padding: 50px;
+    box-sizing: border-box;
+    margin: 10px auto 60px auto;
+    width: 80%;
+    border-radius: 10px;
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    border: 1px solid #3d3d3d;
+
+    &__intro {
+        text-align: center;
+        font-size: 3.5vw;
+    }
+
+    &__text {
+        font-size: 3vw;
+    }
+}
+
+
 .kontakt {
     margin: 120px auto 60px auto;
 
@@ -1037,6 +1060,21 @@ h6 { font-size: 16px;}
                     }
                 }
             }
+        }
+    }
+
+    .karte {
+        padding: 50px;
+        margin: 60px auto;
+        width: 60%;
+    
+        &__intro {
+            text-align: center;
+            font-size: 2.4vw;
+        }
+    
+        &__text {
+            font-size: 2.4vw;
         }
     }
 
