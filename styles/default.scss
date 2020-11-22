@@ -780,6 +780,27 @@ h6 { font-size: 16px;}
     box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     border: 1px solid #3d3d3d;
 
+    &__z {
+        &__1 {
+            &__images {
+                margin-top: 20px;
+                img {
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+        }
+
+        &__2 {
+            iframe {
+                width: 60vw;
+                height: 40vw;
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+
     &__intro {
         text-align: center;
         font-size: 3.5vw;
@@ -1119,6 +1140,23 @@ h6 { font-size: 16px;}
     
         &__text {
             font-size: 2.4vw;
+        }
+
+        &__z {
+            width: 80%;
+
+            &__1 {
+
+                &__images {
+                    margin-top: 20px;
+                    display: flex;
+                    img {
+                        width: 50%;
+                        margin: auto;
+                    }
+                }
+            }
+            
         }
     }
 

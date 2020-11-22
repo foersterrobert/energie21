@@ -931,6 +931,22 @@ h6 {
   border: 1px solid #3d3d3d;
 }
 
+.karte__z__1__images {
+  margin-top: 20px;
+}
+
+.karte__z__1__images img {
+  width: 100%;
+  margin: auto;
+}
+
+.karte__z__2 iframe {
+  width: 60vw;
+  height: 40vw;
+  display: block;
+  margin: auto;
+}
+
 .karte__intro {
   text-align: center;
   font-size: 3.5vw;
@@ -1245,6 +1261,19 @@ h6 {
   }
   .karte__text {
     font-size: 2.4vw;
+  }
+  .karte__z {
+    width: 80%;
+  }
+  .karte__z__1__images {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .karte__z__1__images img {
+    width: 50%;
+    margin: auto;
   }
   .kontakt {
     width: 70%;
