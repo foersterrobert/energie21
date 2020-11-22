@@ -430,6 +430,7 @@ h6 {
 }
 
 .sektor__intro {
+  margin-top: 5%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -438,7 +439,6 @@ h6 {
 }
 
 .sektor__intro__tacho {
-  padding-top: 10px;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: tacho;
@@ -484,6 +484,30 @@ h6 {
   height: calc(1.8vw);
 }
 
+.sektor__intro__tacho__img__details--small li {
+  font-size: calc(3.5vw);
+  margin-top: 8px;
+}
+
+.sektor__intro__tacho__img__details--small li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  text-decoration: underline;
+}
+
+.sektor__intro__tacho__img__details--small li a:hover {
+  color: unset;
+}
+
+.sektor__intro__tacho__img__details--small li a img {
+  height: calc(2.5vw);
+}
+
 .sektor__intro__tacho__img__link {
   display: block;
   text-align: center;
@@ -499,6 +523,8 @@ h6 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: text;
+  margin: 0 auto;
+  font-size: calc(min(max(12px, 4.8vw), 28px));
   width: 90%;
 }
 
@@ -1044,7 +1070,7 @@ h6 {
   }
   .sektor__intro__text {
     width: 80%;
-    margin: auto;
+    font-size: calc(min(max(14px, 1.8vw), 42px));
   }
   .sektor__intro__tacho {
     display: block;
@@ -1080,6 +1106,26 @@ h6 {
   }
   .sektor__intro__tacho__img__details li a img {
     height: calc(1.3vw);
+  }
+  .sektor__intro__tacho__img__details--small li {
+    font-size: calc(2vw);
+    margin-top: 8px;
+  }
+  .sektor__intro__tacho__img__details--small li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: black;
+    text-decoration: underline;
+  }
+  .sektor__intro__tacho__img__details--small li a:hover {
+    color: unset;
+  }
+  .sektor__intro__tacho__img__details--small li a img {
+    height: calc(2vw);
   }
   .sektor__graph__title {
     margin: 20px 0 10px 0;
