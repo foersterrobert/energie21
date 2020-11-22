@@ -892,6 +892,15 @@ h6 {
   padding-top: 20px;
 }
 
+.geschichte {
+  margin: 120px 0 40px 0;
+}
+
+.geschichte__title {
+  text-align: center;
+  font-size: 4vw;
+}
+
 .scroll-card {
   scroll-margin-top: 80px;
 }
