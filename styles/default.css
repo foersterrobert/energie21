@@ -947,6 +947,10 @@ h6 {
   margin: auto;
 }
 
+.karte__q__1 h4 {
+  text-align: center;
+}
+
 .karte__intro {
   text-align: center;
   font-size: 3.5vw;
