@@ -825,6 +825,10 @@ h6 { font-size: 16px;}
     &__intro {
         text-align: center;
         font-size: 3.5vw;
+
+        &--small {
+            font-size: 7vw;
+        }
     }
 
     &__text {
@@ -1133,6 +1137,9 @@ h6 { font-size: 16px;}
 
 
     .energien {
+        &__title {
+            font-size: 3.5vw;
+        }
         &__quelle {
             &__text {
                 &__content {

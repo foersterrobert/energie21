@@ -969,6 +969,10 @@ h6 {
   font-size: 3.5vw;
 }
 
+.karte__intro--small {
+  font-size: 7vw;
+}
+
 .karte__text {
   font-size: 3vw;
 }
@@ -1252,6 +1256,9 @@ h6 {
   }
   .sektor__bundesländer__map svg {
     margin: auto;
+  }
+  .energien__title {
+    font-size: 3.5vw;
   }
   .energien__quelle__text__content__wrapper {
     -webkit-box-orient: horizontal;
