@@ -1117,7 +1117,7 @@ h6 {
   }
   .sektor__intro__text {
     width: 80%;
-    font-size: calc(min(max(14px, 1.8vw), 42px));
+    font-size: calc(min(max(15px, 2vw), 40px));
   }
   .sektor__intro__tacho {
     display: block;
