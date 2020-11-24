@@ -206,6 +206,10 @@ h6 {
   font-size: 4.4vw;
 }
 
+.intro__title--big {
+  font-size: 4vw;
+}
+
 .intro__info {
   gap: 2%;
   margin: 40px auto;
@@ -1080,6 +1084,9 @@ h6 {
   }
   .navigation__element {
     margin: 20px 10px;
+  }
+  .intro__title--big {
+    font-size: 3vw;
   }
   .intro__info {
     width: 85%;
