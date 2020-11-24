@@ -1303,6 +1303,9 @@ h6 {
   .karte__text {
     font-size: 2.4vw;
   }
+  .karte__text--small {
+    font-size: 4vw;
+  }
   .karte__z {
     width: 80%;
   }
