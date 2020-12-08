@@ -83,11 +83,13 @@ h6 {
 
 .navigation {
   z-index: 3;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
   padding-bottom: 15px;
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(16, 17, 17, 0.95);
+  background-color: rgba(0, 0, 0, 0.86);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
